@@ -1,69 +1,68 @@
-body {
-  font-family: "Roboto", sans-serif;
+body{
+    font-family: 'Roboto', sans-serif;
 }
+@media screen and (max-width: 768px){
 
-@media screen and (max-width: 768px) {
-  /*header*/
-  .logo {
+/*header*/
+
+.logo{
     width: 100%;
-  }
+    
 
-  .logo a {
+}
+.logo a{
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .logo a img {
+    
+}
+.logo a img{
     width: 165px;
     padding: 22px 106px 12px 105px;
     box-shadow: 0 1px 5px #cecece;
-  }
+    
+}
+/*location*/
 
-  /*location*/
-  .location {
+.location{
     background-color: #eaeaea;
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .location i {
+}
+.location i{
     margin: 0 18px;
-  }
-
-  .location p {
+}
+.location p{
     margin-right: 33px;
-  }
+}
 
-  /*presentation*/
-  .presentation {
+/*presentation*/
+
+.presentation{
     height: fit-content;
     background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  .presentation h1 {
+}
+.presentation h1{
     font-size: 150%;
     font-weight: 700;
     text-align: center;
     margin-top: 43px;
     margin-bottom: 10px;
-  }
-
-  .presentation h2 {
+}
+.presentation h2{
     font-size: 150%;
     font-weight: 100;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
-  }
-
-  .presentation button {
+}
+.presentation button{
     margin-top: 11px;
     margin-bottom: 57px;
     width: 218px;
@@ -74,7 +73,5 @@ body {
     box-shadow: 0px 5px 5px 1px #cecece;
     color: white;
     font-weight: 500;
-  }
 }
-
-/*# sourceMappingURL=style.css.map */
+}
