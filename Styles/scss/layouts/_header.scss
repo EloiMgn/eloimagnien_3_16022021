@@ -1,0 +1,25 @@
+.header{
+    width: 100%;
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        @include box-shadow;
+        &__arrow img{
+            width: 25px;
+            height: 25px;
+        }
+        &__arrow{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 23px;
+            @include margin-header;
+        }
+        &__logo{
+            @include margin-header;
+            align-items: center;
+            margin-right: 106px;
+        }
+        }
+}
+

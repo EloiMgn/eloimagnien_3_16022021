@@ -1,0 +1,10 @@
+.location{
+    background-color: $color-bg;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 104px;
+    padding-right: 130px;
+    &__icon{
+        margin: 16px 0;
+    }
+}

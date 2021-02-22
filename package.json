@@ -1,0 +1,21 @@
+{
+  "name": "eloimagnien_3_16022021",
+  "version": "1.0.0",
+  "description": "Ohmyfood!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./Styles/scss/main.scss:./Styles/css/style.css",
+    "prefix":"postcss ./Styles/css/style.css --use autoprefixer -d ./Styles/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eloidev/eloimagnien_3_16022021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eloidev/eloimagnien_3_16022021/issues"
+  },
+  "homepage": "https://github.com/Eloidev/eloimagnien_3_16022021#readme"
+}
