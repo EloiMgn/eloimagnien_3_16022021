@@ -1,10 +1,176 @@
 .location{
-    background-color: $color-bg;
+    background-color: $color-bg-2;
     display: flex;
     justify-content: space-between;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     padding-left: 104px;
     padding-right: 130px;
     &__icon{
-        margin: 16px 0;
+        margin: 16px 18px 16px 0;
+    }
+}
+.presentation{
+    background-color: $color-bg-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    h1{
+        font-size: 120%;
+        width: 235px;
+        margin: 43px 0 10px 0;
+    }
+    h2{
+        font-size: 115%;
+        font-weight: 200;
+        width: 310px;
+        margin: 10px 0 16px 0;
+    }
+}
+.instructions{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin: 52px 0;
+    h2{
+        margin: 0 0 21px 0;
+    }
+    &__steps{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: 11px 0;
+        width: 335px;
+        
+            &:hover{
+                i{
+                color: $color-primary;
+                }
+        }
+        &__text{
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+            align-items: center;
+            width: 322px;
+            height: 73px;
+            background-color: $color-bg-1;
+            z-index: 1;
+            border-radius: 3ex;
+            font-size: 100%;
+            font-weight: 600;
+            @include box-shadow;
+            i{
+                margin-right: 20px;
+                margin-left: 33px;
+                font-size: 120%;
+                color: $color-icons;
+
+            }
+            &:hover{
+                background-color: lighten($color: $color-primary, $amount: 35);
+                @include box-shadow-hover;
+            }
+        }
+        &__num{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            font-size: 80%;
+            background-color: $color-primary;
+            z-index: 2;
+            margin-right: -11px;
+            color: white;
+            border-radius: 5ex;
+        }
+        
+    }
+}
+main{
+    height: fit-content;
+}
+.restaurants{
+    background-color: $color-bg-1;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    h2{
+        margin: 58px 0 18px 21px;
+        font-weight: 700;
+        font-size: 140%;
+    }
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: fit-content;
+    margin: 0 0 55px 0;
+    &__restaurant{
+        width: 335px;
+        height: 250px;
+        @include box-shadow;
+        margin: 9px 20px;
+        border-radius: 3ex;
+        &__description{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            margin: 19px 24px 19px 14px;
+            h3{
+                font-weight: 700;
+                font-size: 110%;
+                margin-bottom: 7px;
+            }
+            p{
+                font-weight: 300;
+            }
+        }
+        &__like{
+            font-size: 150%;
+            font-weight: 200;
+            &::hover{
+                @include auto-gradient-color($color-secondary);
+            }
+        }
+        &__image{
+            height: 174px;
+            border-radius: 3ex 3ex 0 0;
+            &--palette{
+                background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            &--note{
+                background-image: url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            &--french{
+                background-image: url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            &--sens{
+                background-image: url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+        }
     }
 }

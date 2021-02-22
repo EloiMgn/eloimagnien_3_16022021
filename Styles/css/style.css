@@ -1,3 +1,7 @@
+h1, h2, h3, p {
+  margin: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -6,13 +10,35 @@ body a {
   color: black;
 }
 
+.presentation__explore {
+  width: 220px;
+  height: 50px;
+  color: white;
+  border: none;
+  border-radius: 3ex;
+  margin: 15px 0 57px 0;
+  background: #FF79DA;
+  background: linear-gradient(175deg, #ff46cc, #9356DC);
+  box-shadow: 0px 5px 5px 1px #e5e5e5;
+}
+
+.cards__restaurant__like i {
+  color: #9356DC;
+  color: linear-gradient(#782cd3, #9356DC);
+}
+
+.menu__plates__select img {
+  width: 20px;
+  height: 20px;
+}
+
 .header {
   width: 100%;
 }
 .header__menu {
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 3px 1px 3px black;
+  box-shadow: 0px 5px 5px 1px #e5e5e5;
 }
 .header__menu__arrow img {
   width: 25px;
@@ -23,6 +49,7 @@ body a {
   flex-direction: column;
   justify-content: center;
   margin-left: 23px;
+  margin-right: 32px;
   margin-top: 22px;
   margin-bottom: 11px;
 }
@@ -31,17 +58,224 @@ body a {
   margin-bottom: 11px;
   align-items: center;
   margin-right: 106px;
+  width: 80%;
+}
+
+body {
+  height: fit-content;
+}
+
+.banner img {
+  height: 257px;
+  width: 100%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #353535;
+  height: fit-content;
+}
+
+.footer__logo {
+  padding: 26px 0 18px 25px;
+}
+.footer__logo a {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  width: 99px;
+  height: 40px;
+}
+
+.footer__links {
+  color: white;
+  padding-bottom: 37px;
+}
+.footer__links i {
+  margin: 0 10px 0 0;
+}
+.footer__links a {
+  color: white;
+}
+.footer__links__a {
+  margin: 10px 0 5px 25px;
 }
 
 .location {
-  background-color: #f6f6f6;
+  background-color: #eaeaea;
   display: flex;
   justify-content: space-between;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   padding-left: 104px;
   padding-right: 130px;
 }
 .location__icon {
-  margin: 16px 0;
+  margin: 16px 18px 16px 0;
+}
+
+.presentation {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+}
+.presentation h1 {
+  font-size: 120%;
+  width: 235px;
+  margin: 43px 0 10px 0;
+}
+.presentation h2 {
+  font-size: 115%;
+  font-weight: 200;
+  width: 310px;
+  margin: 10px 0 16px 0;
+}
+
+.instructions {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  margin: 52px 0;
+}
+.instructions h2 {
+  margin: 0 0 21px 0;
+}
+.instructions__steps {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 11px 0;
+  width: 335px;
+}
+.instructions__steps:hover i {
+  color: #9356DC;
+}
+.instructions__steps__text {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  width: 322px;
+  height: 73px;
+  background-color: #f6f6f6;
+  z-index: 1;
+  border-radius: 3ex;
+  font-size: 100%;
+  font-weight: 600;
+  box-shadow: 0px 5px 5px 1px #e5e5e5;
+}
+.instructions__steps__text i {
+  margin-right: 20px;
+  margin-left: 33px;
+  font-size: 120%;
+  color: #7e7e7e;
+}
+.instructions__steps__text:hover {
+  background-color: #f2eafb;
+  box-shadow: 0px 5px 5px 1px #bfbfbf;
+}
+.instructions__steps__num {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  font-size: 80%;
+  background-color: #9356DC;
+  z-index: 2;
+  margin-right: -11px;
+  color: white;
+  border-radius: 5ex;
+}
+
+main {
+  height: fit-content;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+.restaurants h2 {
+  margin: 58px 0 18px 21px;
+  font-weight: 700;
+  font-size: 140%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: fit-content;
+  margin: 0 0 55px 0;
+}
+.cards__restaurant {
+  width: 335px;
+  height: 250px;
+  box-shadow: 0px 5px 5px 1px #e5e5e5;
+  margin: 9px 20px;
+  border-radius: 3ex;
+}
+.cards__restaurant__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 19px 24px 19px 14px;
+}
+.cards__restaurant__description h3 {
+  font-weight: 700;
+  font-size: 110%;
+  margin-bottom: 7px;
+}
+.cards__restaurant__description p {
+  font-weight: 300;
+}
+.cards__restaurant__like {
+  font-size: 150%;
+  font-weight: 200;
+}
+.cards__restaurant__like::hover {
+  color: #FF79DA;
+  color: linear-gradient(#ff46cc, #9356DC);
+}
+.cards__restaurant__image {
+  height: 174px;
+  border-radius: 3ex 3ex 0 0;
+}
+.cards__restaurant__image--palette {
+  background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.cards__restaurant__image--note {
+  background-image: url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.cards__restaurant__image--french {
+  background-image: url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.cards__restaurant__image--sens {
+  background-image: url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=style.css.map */

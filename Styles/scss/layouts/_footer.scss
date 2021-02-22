@@ -1,0 +1,27 @@
+footer{
+    background-color: #353535;
+    height: fit-content;
+}
+.footer__logo{
+    padding: 26px 0 18px 25px;
+    a{
+        font-family: 'Shrikhand', cursive;
+        color: white;
+        width: 99px;
+        height: 40px;
+    }  
+}
+.footer__links{
+    color: white;
+    padding-bottom: 37px;
+    i{
+        margin: 0 10px 0 0;
+    }
+    a{
+        color: white;
+    }
+    &__a{
+        margin: 10px 0 5px 25px;
+
+    }
+}

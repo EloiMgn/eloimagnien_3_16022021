@@ -1,0 +1,17 @@
+.presentation__explore{
+    width: 220px;
+    height: 50px;
+    color: white;
+    border: none;
+    border-radius: 3ex;
+    margin: 15px 0 57px 0;
+    @include auto-gradient-bg($color-secondary);
+    @include box-shadow;
+}
+
+.cards__restaurant__like{
+    i{
+
+        @include auto-gradient-color($color-primary);
+    }
+}
