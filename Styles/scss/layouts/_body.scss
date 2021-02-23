@@ -1,3 +1,109 @@
 body{
     height: fit-content;
 }
+.banner{
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+    &--palette{
+        background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    &--note{
+        background-image: url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    &--french{
+        background-image: url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    &--sense{
+        background-image: url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+.menu{
+    background-color: $color-bg-1;
+    padding-top: 38px;
+    margin-top: -38px;
+    border-top-right-radius: 5ex;
+    border-top-left-radius: 5ex;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__border{
+        background-color: $color-tertiary;
+        width: 40px;
+        height: 3px;
+        margin: 0 0 15px 20px;
+        align-self: flex-start;
+    }
+    h1{
+        font-family: 'Shrikhand', cursive;
+        font-size: 180%;
+    }
+    h2{
+        font-size: 120%;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 18px 0 9px 20px;
+        align-self: flex-start;
+    }
+    h3{
+        font-size: 110%;
+        font-weight: 500;
+    }
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 38px 19px 19px;
+    }
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    &__plates{
+        display: flex;
+        background-color: white;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        height: 68px;
+        width: 350px;
+        margin: 7px 0;
+        border-radius: 2ex;
+        &__text{
+            width: 260px;
+            height: 43px;
+            margin: 11px 27px 10px 9px;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        &__price{
+            font-size: 100%;
+            font-weight: 700;
+            color: $color-prices;
+            margin: 42px 21px 15px 0;
+
+        }
+    }
+    &__button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+}

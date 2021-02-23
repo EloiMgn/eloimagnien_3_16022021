@@ -2,3 +2,26 @@
     width: 20px;
     height: 20px;
 }
+
+
+.cards__restaurant__like{
+    position: relative;
+    top: -60px; left: 120px; 
+}
+
+.menu__header i{
+    font-size: 180%;
+}
+
+.custom-checkbox .checked {
+    display: none;
+  }
+  .custom-checkbox input[type="checkbox"]{
+      &:checked~.checked {
+        display: inline-block;
+        color: $color-primary;
+      }
+      &:checked~.unchecked {
+        display: none;
+      }
+  }

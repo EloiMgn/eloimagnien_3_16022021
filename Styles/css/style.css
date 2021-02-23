@@ -2,6 +2,12 @@ h1, h2, h3, p {
   margin: 0;
 }
 
+input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -10,7 +16,7 @@ body a {
   color: black;
 }
 
-.presentation__explore {
+.presentation__explore, .menu__button {
   width: 220px;
   height: 50px;
   color: white;
@@ -22,14 +28,31 @@ body a {
   box-shadow: 0px 5px 5px 1px #e5e5e5;
 }
 
-.cards__restaurant__like i {
-  color: #9356DC;
-  color: linear-gradient(#782cd3, #9356DC);
-}
-
 .menu__plates__select img {
   width: 20px;
   height: 20px;
+}
+
+.cards__restaurant__like {
+  position: relative;
+  top: -60px;
+  left: 120px;
+}
+
+.menu__header i {
+  font-size: 180%;
+}
+
+.custom-checkbox .checked {
+  display: none;
+}
+
+.custom-checkbox input[type=checkbox]:checked ~ .checked {
+  display: inline-block;
+  color: #9356DC;
+}
+.custom-checkbox input[type=checkbox]:checked ~ .unchecked {
+  display: none;
 }
 
 .header {
@@ -40,10 +63,6 @@ body a {
   justify-content: space-between;
   box-shadow: 0px 5px 5px 1px #e5e5e5;
 }
-.header__menu__arrow img {
-  width: 25px;
-  height: 25px;
-}
 .header__menu__arrow {
   display: flex;
   flex-direction: column;
@@ -52,6 +71,7 @@ body a {
   margin-right: 32px;
   margin-top: 22px;
   margin-bottom: 11px;
+  font-size: 160%;
 }
 .header__menu__logo {
   margin-top: 22px;
@@ -65,10 +85,110 @@ body {
   height: fit-content;
 }
 
-.banner img {
-  height: 257px;
+.banner {
+  height: 260px;
   width: 100%;
   object-fit: cover;
+}
+.banner--palette {
+  background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.banner--note {
+  background-image: url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.banner--french {
+  background-image: url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.banner--sense {
+  background-image: url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  padding-top: 38px;
+  margin-top: -38px;
+  border-top-right-radius: 5ex;
+  border-top-left-radius: 5ex;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu__border {
+  background-color: #99E2D0;
+  width: 40px;
+  height: 3px;
+  margin: 0 0 15px 20px;
+  align-self: flex-start;
+}
+.menu h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 180%;
+}
+.menu h2 {
+  font-size: 120%;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 18px 0 9px 20px;
+  align-self: flex-start;
+}
+.menu h3 {
+  font-size: 110%;
+  font-weight: 500;
+}
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 38px 19px 19px;
+}
+.menu__cards {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.menu__plates {
+  display: flex;
+  background-color: white;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 68px;
+  width: 350px;
+  margin: 7px 0;
+  border-radius: 2ex;
+}
+.menu__plates__text {
+  width: 260px;
+  height: 43px;
+  margin: 11px 27px 10px 9px;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu__plates__price {
+  font-size: 100%;
+  font-weight: 700;
+  color: #353535;
+  margin: 42px 21px 15px 0;
+}
+.menu__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 footer {
@@ -272,7 +392,7 @@ main {
   background-size: cover;
   background-position: center;
 }
-.cards__restaurant__image--sens {
+.cards__restaurant__image--sense {
   background-image: url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: cover;
   background-position: center;

@@ -1,4 +1,4 @@
-.presentation__explore{
+.presentation__explore, .menu__button{
     width: 220px;
     height: 50px;
     color: white;
@@ -9,9 +9,3 @@
     @include box-shadow;
 }
 
-.cards__restaurant__like{
-    i{
-
-        @include auto-gradient-color($color-primary);
-    }
-}
