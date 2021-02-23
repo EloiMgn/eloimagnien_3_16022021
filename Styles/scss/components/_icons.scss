@@ -10,7 +10,7 @@
 }
 
 .menu__header i{
-    font-size: 180%;
+    font-size: 150%;
 }
 
 .custom-checkbox .checked {
@@ -20,6 +20,30 @@
       &:checked~.checked {
         display: inline-block;
         color: $color-primary;
+      }
+      &:checked~.unchecked {
+        display: none;
+      }
+  }
+
+  .checkbox-menu .checked {
+    display: none;
+  }
+  .checkbox-menu input[type="checkbox"]{
+      &:checked~.checked {
+        background-color: $color-tertiary;
+        width: 60px;
+        height: 68px;
+        border-top-right-radius: 2ex;
+        border-bottom-right-radius: 2ex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        i{
+          color: white;
+        }
       }
       &:checked~.unchecked {
         display: none;

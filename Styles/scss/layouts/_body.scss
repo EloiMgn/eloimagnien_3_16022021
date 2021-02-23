@@ -45,7 +45,7 @@ body{
     }
     h1{
         font-family: 'Shrikhand', cursive;
-        font-size: 180%;
+        font-size: 150%;
     }
     h2{
         font-size: 120%;
@@ -77,8 +77,9 @@ body{
 
         height: 68px;
         width: 350px;
-        margin: 7px 0;
+        margin: 10px 7px;
         border-radius: 2ex;
+        @include box-shadow;
         &__text{
             width: 260px;
             height: 43px;
@@ -96,7 +97,6 @@ body{
             font-weight: 700;
             color: $color-prices;
             margin: 42px 21px 15px 0;
-
         }
     }
     &__button{
@@ -106,4 +106,8 @@ body{
         align-content: center;
         align-items: center;
     }
+}
+.checkbox-menu{
+    width: 350px;
+    height: 68px;
 }
