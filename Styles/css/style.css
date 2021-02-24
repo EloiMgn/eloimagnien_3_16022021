@@ -1,3 +1,44 @@
+@keyframes cards-appearance {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes title-appearance {
+  0% {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes checkbox {
+  0% {
+    transform-origin: right;
+    transform: translateX(50px) scaleX(0);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateX(0px) scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes icon {
+  0% {
+    transform: translateX(50px) rotate(360deg);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+    opacity: 1;
+  }
+}
 h1, h2, h3, p {
   margin: 0;
 }
@@ -70,9 +111,11 @@ body a {
   justify-content: center;
   align-content: center;
   align-items: center;
+  animation: 500ms ease 100ms 1 normal both running checkbox;
 }
 .checkbox-menu input[type=checkbox]:checked ~ .checked i {
   color: white;
+  animation: 350ms ease 250ms 1 normal both running icon;
 }
 .checkbox-menu input[type=checkbox]:checked ~ .unchecked {
   display: none;
@@ -151,6 +194,7 @@ body {
   height: 3px;
   margin: 0 0 15px 20px;
   align-self: flex-start;
+  animation: 750ms ease 100ms 1 normal both running title-appearance;
 }
 .menu h1 {
   font-family: "Shrikhand", cursive;
@@ -162,6 +206,7 @@ body {
   text-transform: uppercase;
   margin: 18px 0 9px 20px;
   align-self: flex-start;
+  animation: 750ms ease 100ms 1 normal both running title-appearance;
 }
 .menu h3 {
   font-size: 110%;
@@ -218,6 +263,46 @@ body {
 .checkbox-menu {
   width: 350px;
   height: 68px;
+}
+
+.plate-1 {
+  animation: 750ms ease 200ms 1 normal both running cards-appearance;
+}
+
+.plate-2 {
+  animation: 750ms ease 300ms 1 normal both running cards-appearance;
+}
+
+.plate-3 {
+  animation: 750ms ease 400ms 1 normal both running cards-appearance;
+}
+
+.plate-4 {
+  animation: 750ms ease 500ms 1 normal both running cards-appearance;
+}
+
+.plate-5 {
+  animation: 750ms ease 600ms 1 normal both running cards-appearance;
+}
+
+.plate-6 {
+  animation: 750ms ease 700ms 1 normal both running cards-appearance;
+}
+
+.plate-7 {
+  animation: 750ms ease 800ms 1 normal both running cards-appearance;
+}
+
+.plate-8 {
+  animation: 750ms ease 900ms 1 normal both running cards-appearance;
+}
+
+.plate-9 {
+  animation: 750ms ease 1000ms 1 normal both running cards-appearance;
+}
+
+.plate-10 {
+  animation: 750ms ease 1100ms 1 normal both running cards-appearance;
 }
 
 footer {
@@ -425,6 +510,46 @@ main {
   background-image: url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.step-1 {
+  animation: 750ms ease 200ms 1 normal both running cards-appearance;
+}
+
+.step-2 {
+  animation: 750ms ease 300ms 1 normal both running cards-appearance;
+}
+
+.step-3 {
+  animation: 750ms ease 400ms 1 normal both running cards-appearance;
+}
+
+.text-1 {
+  animation: 750ms ease-in-out 250ms 1 normal both running title-appearance;
+}
+
+.text-2 {
+  animation: 750ms ease-in-out 350ms 1 normal both running title-appearance;
+}
+
+.text-3 {
+  animation: 750ms ease-in-out 450ms 1 normal both running title-appearance;
+}
+
+.card-1 {
+  animation: 750ms ease-in-out 1000ms 1 normal both running cards-appearance;
+}
+
+.card-2 {
+  animation: 750ms ease-in-out 1200ms 1 normal both running cards-appearance;
+}
+
+.card-3 {
+  animation: 750ms ease-in-out 1400ms 1 normal both running cards-appearance;
+}
+
+.card-4 {
+  animation: 750ms ease-in-out 1600ms 1 normal both running cards-appearance;
 }
 
 /*# sourceMappingURL=style.css.map */

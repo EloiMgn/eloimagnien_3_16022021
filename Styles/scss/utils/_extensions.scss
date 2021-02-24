@@ -1,0 +1,48 @@
+@keyframes cards-appearance {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes title-appearance {
+    0% {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes checkbox {
+    0% {
+        transform-origin: right;
+        transform: translateX(50px) scaleX(0);
+        opacity: .1;
+    }
+
+    100% {
+        transform: translateX(0px) scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes icon {
+    0% {
+        transform: translateX(50px) rotate(360deg);
+        opacity: .1;
+    }
+
+    100% {
+        transform: translateX(0px) rotate(-0deg);
+        opacity: 1;
+    }
+}

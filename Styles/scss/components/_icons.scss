@@ -41,8 +41,10 @@
         justify-content: center;
         align-content: center;
         align-items: center;
+        animation: 500ms ease 100ms 1 normal both running checkbox;
         i{
           color: white;
+          animation: 350ms ease 250ms 1 normal both running icon;
         }
       }
       &:checked~.unchecked {

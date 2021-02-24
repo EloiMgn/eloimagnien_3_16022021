@@ -42,6 +42,7 @@ body{
         height: 3px;
         margin: 0 0 15px 20px;
         align-self: flex-start;
+        animation: 750ms ease 100ms 1 normal both running title-appearance;
     }
     h1{
         font-family: 'Shrikhand', cursive;
@@ -53,6 +54,7 @@ body{
         text-transform: uppercase;
         margin: 18px 0 9px 20px;
         align-self: flex-start;
+        animation: 750ms ease 100ms 1 normal both running title-appearance;
     }
     h3{
         font-size: 110%;
@@ -68,18 +70,19 @@ body{
         flex-direction: column;
         align-content: center;
         align-items: center;
+        
     }
     &__plates{
         display: flex;
         background-color: white;
         justify-content: flex-start;
         align-items: flex-end;
-
         height: 68px;
         width: 350px;
         margin: 10px 7px;
         border-radius: 2ex;
         @include box-shadow;
+
         &__text{
             width: 260px;
             height: 43px;
@@ -110,4 +113,35 @@ body{
 .checkbox-menu{
     width: 350px;
     height: 68px;
+}
+
+.plate-1{
+    animation: 750ms ease 200ms 1 normal both running cards-appearance;
+}
+.plate-2{
+    animation: 750ms ease 300ms 1 normal both running cards-appearance;
+}
+.plate-3{
+    animation: 750ms ease 400ms 1 normal both running cards-appearance;
+}
+.plate-4{
+    animation: 750ms ease 500ms 1 normal both running cards-appearance;
+}
+.plate-5{
+    animation: 750ms ease 600ms 1 normal both running cards-appearance;
+}
+.plate-6{
+    animation: 750ms ease 700ms 1 normal both running cards-appearance;
+}
+.plate-7{
+    animation: 750ms ease 800ms 1 normal both running cards-appearance;
+}
+.plate-8{
+    animation: 750ms ease 900ms 1 normal both running cards-appearance;
+}
+.plate-9{
+    animation: 750ms ease 1000ms 1 normal both running cards-appearance;
+}
+.plate-10{
+    animation: 750ms ease 1100ms 1 normal both running cards-appearance;
 }

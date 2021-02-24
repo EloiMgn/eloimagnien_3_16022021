@@ -120,6 +120,7 @@ main{
     align-content: center;
     height: fit-content;
     margin: 0 0 55px 0;
+    
     &__restaurant{
         width: 335px;
         height: 250px;
@@ -174,3 +175,35 @@ main{
         }
     }
 }
+.step-1{
+    animation: 750ms ease 200ms 1 normal both running cards-appearance;
+}
+.step-2{
+    animation: 750ms ease 300ms 1 normal both running cards-appearance;
+}
+.step-3{
+    animation: 750ms ease 400ms 1 normal both running cards-appearance;
+}
+.text-1{
+    animation: 750ms ease-in-out 250ms 1 normal both running title-appearance;
+}
+.text-2{
+    animation: 750ms ease-in-out 350ms 1 normal both running title-appearance;
+}
+.text-3{
+    animation: 750ms ease-in-out 450ms 1 normal both running title-appearance;
+}
+
+.card-1{
+    animation: 750ms ease-in-out 1000ms 1 normal both running cards-appearance;
+}
+.card-2{
+    animation: 750ms ease-in-out 1200ms 1 normal both running cards-appearance;
+}
+.card-3{
+    animation: 750ms ease-in-out 1400ms 1 normal both running cards-appearance;
+}
+.card-4{
+    animation: 750ms ease-in-out 1600ms 1 normal both running cards-appearance;
+}
+
