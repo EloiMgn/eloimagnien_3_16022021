@@ -39,6 +39,14 @@
     opacity: 1;
   }
 }
+@keyframes like {
+  0% {
+    transform: translteX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 h1, h2, h3, p {
   margin: 0;
 }
@@ -74,12 +82,6 @@ body a {
   height: 20px;
 }
 
-.cards__restaurant__like {
-  position: relative;
-  top: -60px;
-  left: 120px;
-}
-
 .menu__header i {
   font-size: 150%;
 }
@@ -94,6 +96,7 @@ body a {
 }
 .custom-checkbox input[type=checkbox]:checked ~ .unchecked {
   display: none;
+  animation: 500ms ease 100ms 1 normal both running like;
 }
 
 .checkbox-menu .checked {
@@ -129,6 +132,13 @@ body a {
   justify-content: space-between;
   box-shadow: 0px 5px 5px 1px #e5e5e5;
 }
+@media screen and (min-width: 1024px) {
+  .header__menu {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
 .header__menu__arrow {
   display: flex;
   flex-direction: column;
@@ -139,12 +149,25 @@ body a {
   margin-bottom: 11px;
   font-size: 160%;
 }
+@media screen and (min-width: 1024px) {
+  .header__menu__arrow {
+    justify-self: flex-start;
+  }
+}
 .header__menu__logo {
   margin-top: 22px;
   margin-bottom: 11px;
   align-items: center;
   margin-right: 106px;
   width: 80%;
+}
+@media screen and (min-width: 1024px) {
+  .header__menu__logo {
+    width: 170px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 body {
@@ -198,7 +221,7 @@ body {
 }
 .menu h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 150%;
+  font-size: 160%;
 }
 .menu h2 {
   font-size: 120%;
@@ -216,6 +239,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 38px 19px 19px;
+  width: 320px;
 }
 .menu__cards {
   display: flex;
@@ -464,6 +488,12 @@ main {
   margin: 9px 20px;
   border-radius: 3ex;
 }
+@media screen and (min-width: 1024px) {
+  .cards__restaurant {
+    width: 700px;
+    height: 500px;
+  }
+}
 .cards__restaurant__description {
   display: flex;
   justify-content: space-between;
@@ -482,14 +512,31 @@ main {
 .cards__restaurant__like {
   font-size: 150%;
   font-weight: 200;
+  position: relative;
+  top: -70px;
+  left: 120px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-.cards__restaurant__like::hover {
-  color: #FF79DA;
-  color: linear-gradient(#ff46cc, #9356DC);
+@media screen and (min-width: 1024px) {
+  .cards__restaurant__like {
+    left: 300px;
+  }
 }
 .cards__restaurant__image {
   height: 174px;
   border-radius: 3ex 3ex 0 0;
+}
+@media screen and (min-width: 1024px) {
+  .cards__restaurant__image {
+    width: 700px;
+    height: 424px;
+  }
 }
 .cards__restaurant__image--palette {
   background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -549,6 +596,22 @@ main {
 }
 
 .card-4 {
+  animation: 750ms ease-in-out 1600ms 1 normal both running cards-appearance;
+}
+
+.like-1 {
+  animation: 750ms ease-in-out 1000ms 1 normal both running cards-appearance;
+}
+
+.like-2 {
+  animation: 750ms ease-in-out 1200ms 1 normal both running cards-appearance;
+}
+
+.like-3 {
+  animation: 750ms ease-in-out 1400ms 1 normal both running cards-appearance;
+}
+
+.like-4 {
   animation: 750ms ease-in-out 1600ms 1 normal both running cards-appearance;
 }
 

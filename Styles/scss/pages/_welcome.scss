@@ -127,6 +127,10 @@ main{
         @include box-shadow;
         margin: 9px 20px;
         border-radius: 3ex;
+        @media screen and (min-width: 1024px){
+            width: 700px;
+            height: 500px;
+        }
         &__description{
             display: flex;
             justify-content: space-between;
@@ -145,13 +149,28 @@ main{
         &__like{
             font-size: 150%;
             font-weight: 200;
-            &::hover{
-                @include auto-gradient-color($color-secondary);
+            position: relative;
+            top: -70px; 
+            left: 120px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            @media screen and (min-width: 1024px){
+                left: 300px;
             }
+
         }
         &__image{
             height: 174px;
             border-radius: 3ex 3ex 0 0;
+            @media screen and (min-width: 1024px){
+                width: 700px;
+                height: 424px;
+            }
             &--palette{
                 background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
                 background-size: cover;
@@ -204,6 +223,18 @@ main{
     animation: 750ms ease-in-out 1400ms 1 normal both running cards-appearance;
 }
 .card-4{
+    animation: 750ms ease-in-out 1600ms 1 normal both running cards-appearance;
+}
+.like-1{
+    animation: 750ms ease-in-out 1000ms 1 normal both running cards-appearance;
+}
+.like-2{
+    animation: 750ms ease-in-out 1200ms 1 normal both running cards-appearance;
+}
+.like-3{
+    animation: 750ms ease-in-out 1400ms 1 normal both running cards-appearance;
+}
+.like-4{
     animation: 750ms ease-in-out 1600ms 1 normal both running cards-appearance;
 }
 

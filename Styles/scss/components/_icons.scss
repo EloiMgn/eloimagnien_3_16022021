@@ -4,11 +4,6 @@
 }
 
 
-.cards__restaurant__like{
-    position: relative;
-    top: -60px; left: 120px; 
-}
-
 .menu__header i{
     font-size: 150%;
 }
@@ -20,9 +15,11 @@
       &:checked~.checked {
         display: inline-block;
         color: $color-primary;
+        
       }
       &:checked~.unchecked {
         display: none;
+        animation: 500ms ease 100ms 1 normal both running like;
       }
   }
 

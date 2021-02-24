@@ -5,6 +5,11 @@
         display: flex;
         justify-content: space-between;
         @include box-shadow;
+        @media screen and (min-width: 1024px){
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+        }
         
         &__arrow{
             display: flex;
@@ -13,13 +18,24 @@
             margin-left: 23px;
             margin-right: 32px;
             @include margin-header;
-            font-size: 160%
+            font-size: 160%;
+
+            @media screen and (min-width: 1024px){
+                justify-self: flex-start;
+            }
         }
         &__logo{
             @include margin-header;
             align-items: center;
             margin-right: 106px;
             width: 80%;
+            @media screen and (min-width: 1024px){
+                width: 170px;
+                align-content: center;
+                justify-content: center;
+                text-align: center;
+            }
+                
         }
     }
 }

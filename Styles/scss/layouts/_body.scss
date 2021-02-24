@@ -46,7 +46,7 @@ body{
     }
     h1{
         font-family: 'Shrikhand', cursive;
-        font-size: 150%;
+        font-size: 160%;
     }
     h2{
         font-size: 120%;
@@ -64,6 +64,7 @@ body{
         display: flex;
         justify-content: space-between;
         margin: 0 38px 19px 19px;
+        width: 320px;
     }
     &__cards{
         display: flex;
