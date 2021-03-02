@@ -66,149 +66,142 @@
                             <img src="images/logo/heart.svg" alt="heart" class="checked checked--menu">
                     </label>
                 </div>
-                <h2>Entrées</h2>
-                <div class="menu__border"></div>
-                <div class="menu__cards">
-                    <label class="checkbox-menu menu__plates plate-1">
-                        <div class="menu__plates__text">
-                            <h3>Tartare de thon</h3>
-                            <p>Assaisonné au yuzu</p>
-                        </div>
-                        <div class="menu__plates__price">
-                            <p>25€</p>
-                        </div>
-                        <input type="checkbox">
-                        <div class="unchecked"></div>
-                        <div class="checked">
-                            <i class="fas fa-check-circle"></i> 
-                        </div> 
-                    </label>
-                    <label class="checkbox-menu menu__plates plate-2">
-                        <div class="menu__plates__text">
-                            <h3>Bouchée de homard croustillant </h3>
-                            <p>Et sa farandole de petits légumes</p>
-                        </div>
-                        <div class="menu__plates__price">
-                            <p>35€</p>
-                        </div>
-                        <input type="checkbox">
-                        <div class="unchecked"></div>
-                        <div class="checked">
-                            <i class="fas fa-check-circle"></i> 
-                        </div> 
-                    </label>
-                    <label class="checkbox-menu menu__plates plate-3">
-                        <div class="menu__plates__text">
-                        <h3>Velouté de cèpes</h3>
-                        <p>Aux truffes</p>
-                        </div>
-                        <div class="menu__plates__price">
-                            <p>20€</p>
-                        </div>
-                        <input type="checkbox">
-                        <div class="unchecked"></div>
-                        <div class="checked">
-                            <i class="fas fa-check-circle"></i> 
-                        </div> 
-                    </label>
-                </div>
-    
-                <h2>Plats</h2>
-                <div class="menu__border"></div>
-                <div class="menu__cards">
-                    <label class="checkbox-menu menu__plates plate-4">
-                        <div class="menu__plates__text">
-                            <h3>Poulet rôti aux herbes de Provence </h3>
-                            <p>Et sa crème de truffe</p>
-                        </div>
-                        <div class="menu__plates__price">
-                            <p>40€</p>
-                        </div>
-                        <input type="checkbox">
-                        <div class="unchecked"></div>
-                        <div class="checked">
-                            <i class="fas fa-check-circle"></i> 
-                        </div> 
-                    </label>
-                    <label class="checkbox-menu menu__plates plate-5">
-                        <div class="menu__plates__text">
-                            <h3>Langouste rôtie </h3>
-                            <p>Et ses légumes de saison</p>
-                        </div>
-                        <div class="menu__plates__price">
-                            <p>35€</p>
-                        </div>
-                        <input type="checkbox">
-                        <div class="unchecked"></div>
-                        <div class="checked">
-                            <i class="fas fa-check-circle"></i> 
-                        </div> 
-                    </label>
-                    <label class="checkbox-menu menu__plates plate-6">
-                        <div class="menu__plates__text">
-                            <h3>Côte de boeuf Angus </h3>
-                            <p>Et sa purée de panais</p>
-                        </div>
-                        <div class="menu__plates__price">
-                            <p>44€</p>
-                        </div>
-                        <input type="checkbox">
-                        <div class="unchecked"></div>
-                        <div class="checked">
-                            <i class="fas fa-check-circle"></i> 
-                        </div> 
-                    </label>
-                </div>
-            
-                <h2>Desserts</h2>
-                <div class="menu__border"></div>
-                <div class="menu__cards">
-                    <label class="checkbox-menu menu__plates plate-7">
-                        <div class="menu__plates__text">
-                            <h3>Farandole de desserts</h3>
-                            <p>Du chef</p>
-                        </div>
-                        <div class="menu__plates__price">
-                            <p>18€</p>
-                        </div>
-                        <input type="checkbox">
-                        <div class="unchecked"></div>
-                        <div class="checked">
-                            <i class="fas fa-check-circle"></i> 
-                        </div> 
-                    </label>
-                    <label class="checkbox-menu menu__plates plate-8">
-                        <div class="menu__plates__text">
-                            <h3>Crème brulée</h3>
-                            <p>Revisitée</p>
-                        </div>
-                        <div class="menu__plates__price">
-                            <p>22€</p>
-                        </div>
-                        <input type="checkbox">
-                        <div class="unchecked"></div>
-                        <div class="checked">
-                            <i class="fas fa-check-circle"></i> 
-                        </div> 
-                    </label>
-                    <label class="checkbox-menu menu__plates plate-9">
-                        <div class="menu__plates__text">
-                            <h3>Tiramisu</h3>
-                            <p>À la noisette</p>
-                        </div>
-                        <div class="menu__plates__price">
-                            <p>23€</p>
-                        </div>
-                        <input type="checkbox">
-                        <div class="unchecked"></div>
-                        <div class="checked">
-                            <i class="fas fa-check-circle"></i> 
-                        </div> 
-                    </label>
-                </div>
-                <div class="menu__button">
-                    <p>Commander</p>
-                </div>
+                <form action="" class="menu__select">
+                    <h2>Entrées</h2>
+                    <div class="menu__border"></div>
+                    <div class="menu__cards">
+                        <label for="plate-1" class="checkbox-menu menu__plates plate-1">
+                            <input id="plate-1" type="checkbox">
+                            <div class="menu__plates__text">
+                                <h3>Tartare de thon</h3>
+                                <p>Assaisonné au yuzu</p>
+                            </div>
+                            <div class="menu__plates__price">
+                                <p>25€</p>
+                            </div>
+                            <input type="checkbox">
+                            
+                            <div class="checked">
+                                <i class="fas fa-check-circle"></i> 
+                            </div> 
+                        </label>
+                        <label for="plate-2" class="checkbox-menu menu__plates plate-2">
+                            <input id="plate-2" type="checkbox">
+                            <div class="menu__plates__text">
+                                <h3>Bouchée de homard croustillant </h3>
+                                <p>Et sa farandole de petits légumes</p>
+                            </div>
+                            <div class="menu__plates__price">
+                                <p>35€</p>
+                            </div>
+                            <div class="checked">
+                                <i class="fas fa-check-circle"></i> 
+                            </div> 
+                        </label>
+                        <label for="plate-3" class="checkbox-menu menu__plates plate-3">
+                            <input id="plate-3" type="checkbox">
+                            <div class="menu__plates__text">
+                            <h3>Velouté de cèpes</h3>
+                            <p>Aux truffes</p>
+                            </div>
+                            <div class="menu__plates__price">
+                                <p>20€</p>
+                            </div>
+                            <div class="checked">
+                                <i class="fas fa-check-circle"></i> 
+                            </div> 
+                        </label>
+                    </div>
+        
+                    <h2>Plats</h2>
+                    <div class="menu__border"></div>
+                    <div class="menu__cards">
+                        <label for="plate-4" class="checkbox-menu menu__plates plate-4">
+                            <input id="plate-4" type="checkbox">
+                            <div class="menu__plates__text">
+                                <h3>Poulet rôti aux herbes de Provence </h3>
+                                <p>Et sa crème de truffe</p>
+                            </div>
+                            <div class="menu__plates__price">
+                                <p>40€</p>
+                            </div>
+                            <div class="checked">
+                                <i class="fas fa-check-circle"></i> 
+                            </div> 
+                        </label>
+                        <label for="plate-5" class="checkbox-menu menu__plates plate-5">
+                            <input id="plate-5" type="checkbox">
+                            <div class="menu__plates__text">
+                                <h3>Langouste rôtie </h3>
+                                <p>Et ses légumes de saison</p>
+                            </div>
+                            <div class="menu__plates__price">
+                                <p>35€</p>
+                            </div>
+                            <div class="checked">
+                                <i class="fas fa-check-circle"></i> 
+                            </div> 
+                        </label>
+                        <label for="plate-6" class="checkbox-menu menu__plates plate-6">
+                            <input id="plate-6" type="checkbox">
+                            <div class="menu__plates__text">
+                                <h3>Côte de boeuf Angus </h3>
+                                <p>Et sa purée de panais</p>
+                            </div>
+                            <div class="menu__plates__price">
+                                <p>44€</p>
+                            </div>
+                            <div class="checked">
+                                <i class="fas fa-check-circle"></i> 
+                            </div> 
+                        </label>
+                    </div>
+                
+                    <h2>Desserts</h2>
+                    <div class="menu__border"></div>
+                    <div class="menu__cards">
+                        <label for="plate-7" class="checkbox-menu menu__plates plate-7">
+                            <input id="plate-7" type="checkbox">
+                            <div class="menu__plates__text">
+                                <h3>Farandole de desserts</h3>
+                                <p>Du chef</p>
+                            </div>
+                            <div class="menu__plates__price">
+                                <p>18€</p>
+                            </div>
+                            <div class="checked">
+                                <i class="fas fa-check-circle"></i> 
+                            </div> 
+                        </label>
+                        <label for="plate-8" class="checkbox-menu menu__plates plate-8">
+                            <input id="plate-8" type="checkbox">
+                            <div class="menu__plates__text">
+                                <h3>Crème brulée</h3>
+                                <p>Revisitée</p>
+                            </div>
+                            <div class="menu__plates__price">
+                                <p>22€</p>
+                            </div>
+                            <div class="checked">
+                                <i class="fas fa-check-circle"></i> 
+                            </div> 
+                        </label>
+                        <label for="plate-9" class="checkbox-menu menu__plates plate-9">
+                            <input id="plate-9" type="checkbox">
+                            <div class="menu__plates__text">
+                                <h3>Tiramisu</h3>
+                                <p>À la noisette</p>
+                            </div>
+                            <div class="menu__plates__price">
+                                <p>23€</p>
+                            </div>
+                            <div class="checked">
+                                <i class="fas fa-check-circle"></i> 
+                            </div> 
+                        </label>
+                    </div>
+                    <input class="menu__button" type="submit" value="Commander">
+                    </form>
             </div>
         </main>
 

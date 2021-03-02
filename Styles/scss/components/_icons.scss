@@ -30,7 +30,8 @@
   }
 
   .checkbox-menu .checked {
-    display: none;
+    opacity: 0;
+    width: 0;
   }
   .checkbox-menu input[type="checkbox"]{
       &:checked~.checked {
@@ -44,7 +45,7 @@
         justify-content: center;
         align-content: center;
         align-items: center;
-        animation: 500ms ease 100ms 1 normal both running checkbox;
+        animation: 500ms ease 0ms 1 normal both running checkbox;
         i{
           color: white;
           animation: 350ms ease 250ms 1 normal both running icon;

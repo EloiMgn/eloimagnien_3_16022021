@@ -21,11 +21,11 @@
 @keyframes checkbox {
   0% {
     transform-origin: right;
-    transform: translateX(50px) scaleX(0);
-    opacity: 0.1;
+    width: 0;
+    opacity: 0;
   }
   100% {
-    transform: translateX(0px) scaleX(1);
+    width: 60px;
     opacity: 1;
   }
 }
@@ -83,7 +83,7 @@ body a {
   color: white;
   border: none;
   border-radius: 4ex;
-  margin: 15px 0 57px 0;
+  margin: 30px 72px;
   background: #FF79DA;
   background: linear-gradient(175deg, #ff46cc, #9356DC);
   box-shadow: 0px 5px 5px -1px #e5e5e5;
@@ -126,7 +126,8 @@ body a {
 }
 
 .checkbox-menu .checked {
-  display: none;
+  opacity: 0;
+  width: 0;
 }
 
 .checkbox-menu input[type=checkbox]:checked ~ .checked {
@@ -140,7 +141,7 @@ body a {
   justify-content: center;
   align-content: center;
   align-items: center;
-  animation: 500ms ease 100ms 1 normal both running checkbox;
+  animation: 500ms ease 0ms 1 normal both running checkbox;
 }
 .checkbox-menu input[type=checkbox]:checked ~ .checked i {
   color: white;
