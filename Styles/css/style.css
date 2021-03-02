@@ -41,8 +41,8 @@
 }
 @keyframes like {
   0% {
-    scale: 0.1;
-    opacity: 0.1;
+    transform-origin: center;
+    scale: 0;
   }
   100% {
     scale: 1;
@@ -153,10 +153,10 @@ body a {
 .custom-checkbox input[type=checkbox]:checked ~ .checked {
   display: inline-block;
   color: #9356DC;
-  animation: 500ms ease 50ms 1 normal both running like;
+  animation: 500ms ease-in 50ms 1 normal both running like;
 }
 .custom-checkbox input[type=checkbox]:checked ~ .unchecked {
-  animation: 500ms ease 50ms 1 normal both running -like;
+  animation: 500ms ease-out 50ms 1 normal both running -like;
 }
 
 .checkbox-menu .checked {
@@ -180,13 +180,6 @@ body a {
 .checkbox-menu input[type=checkbox]:checked ~ .checked i {
   color: white;
   animation: 350ms ease 250ms 1 normal both running icon;
-}
-.checkbox-menu input[type=checkbox]:checked ~ .unchecked {
-  display: none;
-}
-
-.checkbox-menu input[type=checkbox]:checked ~ .menu__plate__price {
-  animation: 500ms ease 100ms 1 normal both running checkbox;
 }
 
 .header {
@@ -723,6 +716,20 @@ main {
 
 .text-3 {
   animation: 750ms ease-in-out 3450ms 1 normal both running title-appearance;
+}
+
+.text--before {
+  font-size: 100%;
+}
+.text--after {
+  font-size: 0%;
+}
+
+.checkbox-menu input[type=checkbox]:checked ~ .text--before {
+  font-size: 0%;
+}
+.checkbox-menu input[type=checkbox]:checked ~ .text--after {
+  font-size: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

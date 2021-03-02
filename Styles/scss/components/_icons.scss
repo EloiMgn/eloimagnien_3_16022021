@@ -22,10 +22,10 @@
       &:checked~.checked {
         display: inline-block;
         color: $color-primary;
-        animation: 500ms ease 50ms 1 normal both running like;
+        animation: 500ms ease-in 50ms 1 normal both running like;
       }
       &:checked~.unchecked {
-        animation: 500ms ease 50ms 1 normal both running -like;
+        animation: 500ms ease-out 50ms 1 normal both running -like;
       }
   }
 
@@ -51,12 +51,4 @@
           animation: 350ms ease 250ms 1 normal both running icon;
         }
       }
-      &:checked~.unchecked {
-        display: none;
-      }
-  }
-  .checkbox-menu input[type="checkbox"]{
-    &:checked~.menu__plate__price{
-      animation: 500ms ease 100ms 1 normal both running checkbox;
-    }
   }

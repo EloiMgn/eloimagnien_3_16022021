@@ -1,0 +1,22 @@
+.text{
+    &--before{
+        font-size: 100%;
+    }
+    &--after{
+        font-size: 0%;
+    }
+}
+.checkbox-menu input[type="checkbox"]{
+    &:checked~.text{
+        &--before{
+            font-size: 0%;
+        }
+        &--after{
+            font-size: 100%;
+        }
+    }
+}
+
+
+
+  
