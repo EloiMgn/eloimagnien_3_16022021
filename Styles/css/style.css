@@ -41,10 +41,22 @@
 }
 @keyframes like {
   0% {
-    transform: translteX(50px);
+    scale: 0.1;
+    opacity: 0.1;
   }
   100% {
-    transform: translateX(0);
+    scale: 1;
+    opacity: 1;
+  }
+}
+@keyframes -like {
+  0% {
+    scale: 1;
+    opacity: 1;
+  }
+  100% {
+    scale: 0;
+    opacity: 0;
   }
 }
 h1, h2, h3, p {
@@ -70,16 +82,17 @@ body a {
   height: 50px;
   color: white;
   border: none;
-  border-radius: 3ex;
+  border-radius: 4ex;
   margin: 15px 0 57px 0;
   background: #FF79DA;
   background: linear-gradient(175deg, #ff46cc, #9356DC);
-  box-shadow: 0px 5px 5px 1px #e5e5e5;
+  box-shadow: 0px 5px 5px -1px #e5e5e5;
+  transition: all 400ms;
 }
-
-.menu__plates__select img {
-  width: 20px;
-  height: 20px;
+.presentation__explore:hover, .menu__button:hover {
+  background: #ff93e1;
+  background: linear-gradient(175deg, #ff60d3, #9356DC);
+  box-shadow: 0px 5px 5px 1px #bfbfbf;
 }
 
 .menu__header i {
@@ -87,16 +100,29 @@ body a {
 }
 
 .custom-checkbox .checked {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+}
+.custom-checkbox .checked--menu {
+  opacity: 0;
+  position: relative;
+  top: 3px;
+  width: 24px;
+  height: 24px;
+  left: -28px;
 }
 
 .custom-checkbox input[type=checkbox]:checked ~ .checked {
   display: inline-block;
   color: #9356DC;
+  animation: 500ms ease 50ms 1 normal both running like;
 }
 .custom-checkbox input[type=checkbox]:checked ~ .unchecked {
-  display: none;
-  animation: 500ms ease 100ms 1 normal both running like;
+  animation: 500ms ease 50ms 1 normal both running -like;
 }
 
 .checkbox-menu .checked {
@@ -124,13 +150,19 @@ body a {
   display: none;
 }
 
+.checkbox-menu input[type=checkbox]:checked ~ .menu__plate__price {
+  animation: 500ms ease 100ms 1 normal both running checkbox;
+}
+
 .header {
   width: 100%;
+  z-index: 1;
 }
 .header__menu {
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 5px 5px 1px #e5e5e5;
+  background-color: #ffff;
+  box-shadow: 0px 5px 5px -1px #e5e5e5;
 }
 @media screen and (min-width: 1024px) {
   .header__menu {
@@ -172,6 +204,14 @@ body a {
 
 body {
   height: fit-content;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    width: 400px;
+    position: relative;
+    margin: auto;
+    background-color: #353535;
+  }
 }
 
 .banner {
@@ -250,13 +290,11 @@ body {
 .menu__plates {
   display: flex;
   background-color: white;
-  justify-content: flex-start;
-  align-items: flex-end;
   height: 68px;
   width: 350px;
   margin: 10px 7px;
   border-radius: 2ex;
-  box-shadow: 0px 5px 5px 1px #e5e5e5;
+  box-shadow: 0px 5px 5px -1px #e5e5e5;
 }
 .menu__plates__text {
   width: 260px;
@@ -330,8 +368,13 @@ body {
 }
 
 footer {
-  background-color: #353535;
+  background-color: #ffff;
   height: fit-content;
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    background-color: #7e7e7e;
+  }
 }
 
 .footer__logo {
@@ -367,6 +410,7 @@ footer {
   align-items: center;
   padding-left: 104px;
   padding-right: 120px;
+  z-index: 0;
 }
 .location__icon {
   margin: 16px 18px 16px 0;
@@ -401,7 +445,8 @@ footer {
   text-align: center;
   align-content: center;
   align-items: center;
-  margin: 52px 0;
+  padding: 52px 0;
+  background-color: #ffff;
 }
 .instructions h2 {
   margin: 0 0 21px 0;
@@ -429,7 +474,8 @@ footer {
   border-radius: 3ex;
   font-size: 100%;
   font-weight: 600;
-  box-shadow: 0px 5px 5px 1px #e5e5e5;
+  box-shadow: 0px 5px 5px -1px #e5e5e5;
+  cursor: pointer;
 }
 .instructions__steps__text i {
   margin-right: 20px;
@@ -481,18 +527,41 @@ main {
   height: fit-content;
   margin: 0 0 55px 0;
 }
+.cards__new {
+  background-color: #99E2D0;
+  color: #278870;
+  width: 80px;
+  height: 30px;
+  position: relative;
+  top: -240px;
+  left: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 0.3ex;
+}
+.cards__new--empty {
+  background-color: none;
+  color: none;
+  width: 80px;
+  height: 30px;
+  position: relative;
+  top: -240px;
+  left: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 .cards__restaurant {
   width: 335px;
   height: 250px;
-  box-shadow: 0px 5px 5px 1px #e5e5e5;
+  box-shadow: 0px 5px 5px -1px #e5e5e5;
   margin: 9px 20px;
   border-radius: 3ex;
-}
-@media screen and (min-width: 1024px) {
-  .cards__restaurant {
-    width: 700px;
-    height: 500px;
-  }
 }
 .cards__restaurant__description {
   display: flex;
@@ -513,7 +582,7 @@ main {
   font-size: 150%;
   font-weight: 200;
   position: relative;
-  top: -70px;
+  top: -100px;
   left: 120px;
   width: 40px;
   height: 40px;
@@ -523,20 +592,9 @@ main {
   align-items: center;
   align-content: center;
 }
-@media screen and (min-width: 1024px) {
-  .cards__restaurant__like {
-    left: 300px;
-  }
-}
 .cards__restaurant__image {
   height: 174px;
   border-radius: 3ex 3ex 0 0;
-}
-@media screen and (min-width: 1024px) {
-  .cards__restaurant__image {
-    width: 700px;
-    height: 424px;
-  }
 }
 .cards__restaurant__image--palette {
   background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -581,38 +639,6 @@ main {
 
 .text-3 {
   animation: 750ms ease-in-out 450ms 1 normal both running title-appearance;
-}
-
-.card-1 {
-  animation: 750ms ease-in-out 1000ms 1 normal both running cards-appearance;
-}
-
-.card-2 {
-  animation: 750ms ease-in-out 1200ms 1 normal both running cards-appearance;
-}
-
-.card-3 {
-  animation: 750ms ease-in-out 1400ms 1 normal both running cards-appearance;
-}
-
-.card-4 {
-  animation: 750ms ease-in-out 1600ms 1 normal both running cards-appearance;
-}
-
-.like-1 {
-  animation: 750ms ease-in-out 1000ms 1 normal both running cards-appearance;
-}
-
-.like-2 {
-  animation: 750ms ease-in-out 1200ms 1 normal both running cards-appearance;
-}
-
-.like-3 {
-  animation: 750ms ease-in-out 1400ms 1 normal both running cards-appearance;
-}
-
-.like-4 {
-  animation: 750ms ease-in-out 1600ms 1 normal both running cards-appearance;
 }
 
 /*# sourceMappingURL=style.css.map */

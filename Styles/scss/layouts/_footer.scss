@@ -1,6 +1,9 @@
 footer{
-    background-color: #353535;
+    background-color: $color-bg-3;
     height: fit-content;
+    @media screen and (min-width: 1024px){
+        background-color: $color-icons;
+    }
 }
 .footer__logo{
     padding: 26px 0 18px 25px;

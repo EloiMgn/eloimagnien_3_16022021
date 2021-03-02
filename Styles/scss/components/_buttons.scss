@@ -3,8 +3,13 @@
     height: 50px;
     color: white;
     border: none;
-    border-radius: 3ex;
+    border-radius: 4ex;
     margin: 15px 0 57px 0;
     @include auto-gradient-bg($color-secondary);
     @include box-shadow;
+    transition: all 400ms;
+    &:hover{
+        @include auto-gradient-bg(lighten($color-secondary, 5));
+        @include box-shadow-hover;
+    }   
 }

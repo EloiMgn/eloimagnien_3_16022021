@@ -63,14 +63,15 @@
                     <label class="custom-checkbox">
                         <input type="checkbox">
                             <i class="far fa-heart unchecked"></i>
-                            <i class="fas fa-heart checked"></i>
+                            <img src="images/logo/heart.svg" alt="heart" class="checked checked--menu">
                     </label>
                 </div>
 
                 <h2>Entrées</h2>
                 <div class="menu__border"></div>
                 <div class="menu__cards">
-                    <label class="checkbox-menu menu__plates plate-1">
+                    <label for="plate-1" class="checkbox-menu menu__plates plate-1">
+                        <input id="plate-1" type="checkbox" value="1">
                         <div class="menu__plates__text">
                             <h3>Fricassée d'escargots</h3>
                             <p>Au piment d'espelette</p>
@@ -78,12 +79,11 @@
                         <div class="menu__plates__price">
                             <p>25€</p>
                         </div>
-                        <input type="checkbox">
-                        <div class="unchecked"></div>
                         <div class="checked">
                             <i class="fas fa-check-circle"></i> 
-                        </div>
+                        </div> 
                     </label>
+
                     <label class="checkbox-menu menu__plates plate-2">
                         <div class="menu__plates__text">
                             <h3>Foie gras de canard mi-cuit</h3>

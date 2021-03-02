@@ -1,9 +1,10 @@
 .header{
     width: 100%;
-    
+    z-index: 1;
     &__menu{
         display: flex;
         justify-content: space-between;
+        background-color: $color-bg-3;
         @include box-shadow;
         @media screen and (min-width: 1024px){
             align-content: center;
