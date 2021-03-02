@@ -18,6 +18,16 @@
     opacity: 1;
   }
 }
+@keyframes border-appearance {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 @keyframes checkbox {
   0% {
     transform-origin: right;
@@ -285,7 +295,7 @@ body {
   height: 3px;
   margin: 0 0 15px 20px;
   align-self: flex-start;
-  animation: 750ms ease 100ms 1 normal both running title-appearance;
+  animation: 750ms ease 250ms 1 normal both running border-appearance;
 }
 .menu h1 {
   font-family: "Shrikhand", cursive;
