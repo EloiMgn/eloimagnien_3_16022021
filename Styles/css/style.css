@@ -407,45 +407,52 @@ body {
   height: 22.5vh;
   display: flex;
   justify-content: space-evenly;
-  animation: 500ms ease 3000ms 1 normal both running close;
+  animation: 0ms ease 3000ms 1 normal both running close;
+  position: absolute;
+  top: 500px;
+  bottom: 500px;
+  left: 100px;
 }
 .load__bar {
   background: #FF79DA;
   background: linear-gradient(175deg, #ff46cc, #9356DC);
   height: 100%;
   width: 3vh;
-  animation: bars 1500ms backwards infinite ease-in-out alternate;
+  animation: bars 800ms backwards 3 ease-in-out alternate;
 }
 .load__bar--1 {
-  animation-delay: 300ms;
+  animation-delay: 160ms;
 }
 .load__bar--2 {
-  animation-delay: 600ms;
+  animation-delay: 320ms;
 }
 .load__bar--3 {
-  animation-delay: 900ms;
+  animation-delay: 480ms;
 }
 .load__bar--4 {
-  animation-delay: 1200ms;
+  animation-delay: 640ms;
 }
 .load__bar--5 {
-  animation-delay: 1500ms;
+  animation-delay: 800ms;
 }
 
 .loaded {
   opacity: 0;
-  animation: 500ms ease 3000ms 1 normal both running load;
+  animation: 0ms ease 3000ms 1 normal both running load;
 }
 
 .loading {
   opacity: 1;
   margin: auto;
   height: 100%;
-  animation: 500ms ease 3000ms 1 normal both running -load;
+  position: sticky;
+  top: -400px;
+  left: 50px;
+  animation: 0ms ease 3000ms 1 normal both running -load;
 }
 
 footer {
-  background-color: #ffff;
+  background-color: #353535;
   height: fit-content;
 }
 @media screen and (min-width: 1024px) {
@@ -695,27 +702,27 @@ main {
 }
 
 .step-1 {
-  animation: 750ms ease 200ms 1 normal both running cards-appearance;
+  animation: 750ms ease 3200ms 1 normal both running cards-appearance;
 }
 
 .step-2 {
-  animation: 750ms ease 300ms 1 normal both running cards-appearance;
+  animation: 750ms ease 3300ms 1 normal both running cards-appearance;
 }
 
 .step-3 {
-  animation: 750ms ease 400ms 1 normal both running cards-appearance;
+  animation: 750ms ease 3400ms 1 normal both running cards-appearance;
 }
 
 .text-1 {
-  animation: 750ms ease-in-out 250ms 1 normal both running title-appearance;
+  animation: 750ms ease-in-out 3250ms 1 normal both running title-appearance;
 }
 
 .text-2 {
-  animation: 750ms ease-in-out 350ms 1 normal both running title-appearance;
+  animation: 750ms ease-in-out 3350ms 1 normal both running title-appearance;
 }
 
 .text-3 {
-  animation: 750ms ease-in-out 450ms 1 normal both running title-appearance;
+  animation: 750ms ease-in-out 3450ms 1 normal both running title-appearance;
 }
 
 /*# sourceMappingURL=style.css.map */
