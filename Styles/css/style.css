@@ -407,11 +407,10 @@ body {
   height: 22.5vh;
   display: flex;
   justify-content: space-evenly;
-  animation: 0ms ease 3000ms 1 normal both running close;
+  animation: 0ms 3000ms 1 normal both running close;
   position: absolute;
-  top: 500px;
-  bottom: 500px;
-  left: 100px;
+  top: 350px;
+  left: 70px;
 }
 .load__bar {
   background: #FF79DA;
@@ -446,8 +445,9 @@ body {
   margin: auto;
   height: 100%;
   position: sticky;
-  top: -400px;
-  left: 50px;
+  top: 0px;
+  bottom: 300px;
+  left: 70px;
   animation: 0ms ease 3000ms 1 normal both running -load;
 }
 

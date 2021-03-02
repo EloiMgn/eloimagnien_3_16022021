@@ -6,11 +6,10 @@
     height: $size*7.5;
     display: flex;
     justify-content: space-evenly;
-    animation: 0ms ease 3000ms 1 normal both running close;
+    animation: 0ms 3000ms 1 normal both running close;
     position: absolute;
-    top: 500px;
-    bottom: 500px;
-    left: 100px;
+    top: 350px;
+    left: 70px;
     &__bar {
         @include auto-gradient-bg($color-secondary);
         height: 100%;
@@ -32,7 +31,8 @@
     margin: auto;
     height: 100%;
     position: sticky;
-    top: -400px;
-    left: 50px;
+    top: 0px;
+    bottom: 300px;
+    left: 70px;
     animation: 0ms ease 3000ms 1 normal both running -load;
 }
