@@ -59,6 +59,40 @@
     opacity: 0;
   }
 }
+@keyframes bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes load {
+  from {
+    opacity: 0;
+    display: none;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes -load {
+  from {
+    opacity: 1;
+  }
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+@keyframes close {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 0;
+  }
+}
 h1, h2, h3, p {
   margin: 0;
 }
@@ -366,6 +400,48 @@ body {
 
 .plate-10 {
   animation: 750ms ease 1100ms 1 normal both running cards-appearance;
+}
+
+.load {
+  width: 30vh;
+  height: 22.5vh;
+  display: flex;
+  justify-content: space-evenly;
+  animation: 500ms ease 3000ms 1 normal both running close;
+}
+.load__bar {
+  background: #FF79DA;
+  background: linear-gradient(175deg, #ff46cc, #9356DC);
+  height: 100%;
+  width: 3vh;
+  animation: bars 1500ms backwards infinite ease-in-out alternate;
+}
+.load__bar--1 {
+  animation-delay: 300ms;
+}
+.load__bar--2 {
+  animation-delay: 600ms;
+}
+.load__bar--3 {
+  animation-delay: 900ms;
+}
+.load__bar--4 {
+  animation-delay: 1200ms;
+}
+.load__bar--5 {
+  animation-delay: 1500ms;
+}
+
+.loaded {
+  opacity: 0;
+  animation: 500ms ease 3000ms 1 normal both running load;
+}
+
+.loading {
+  opacity: 1;
+  margin: auto;
+  height: 100%;
+  animation: 500ms ease 3000ms 1 normal both running -load;
 }
 
 footer {

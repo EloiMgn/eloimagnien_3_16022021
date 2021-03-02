@@ -44,167 +44,176 @@
 
 
     <body>
-        
-        <header class="header">
-            <div class="header__menu">
-                <div class="header__menu__arrow"></div>
-                <img src="images/logo/ohmyfood@2x.svg" alt="logo" class="header__menu__logo">
-            </div>
-        </header>
-        <section class="location">
-            <div class="location__icon">
-                <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="location__text">
-                <p>Paris, Belleville</p>
+        <section class="loading">
+            <div class="load">
+                <div class="load__bar load__bar--1"></div>
+                <div class="load__bar load__bar--2"></div>
+                <div class="load__bar load__bar--3"></div>
+                <div class="load__bar load__bar--4"></div>
+                <div class="load__bar load__bar--5"></div>
             </div>
         </section>
+        <div class="loaded">
+            <header class="header">
+                <div class="header__menu">
+                    <div class="header__menu__arrow"></div>
+                    <img src="images/logo/ohmyfood@2x.svg" alt="logo" class="header__menu__logo">
+                </div>
+            </header>
+            <section class="location">
+                <div class="location__icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="location__text">
+                    <p>Paris, Belleville</p>
+                </div>
+            </section>
 
-        <section class="presentation">
-            <h1>Réservez le menu qui vous convient</h1>
-            <h2>Découvrez des restaurants d'exception sélectionnés par nos soins.</h2>
-            <button class="presentation__explore">
-                Explorer nos restaurants
-            </button>
-        </section>
+            <section class="presentation">
+                <h1>Réservez le menu qui vous convient</h1>
+                <h2>Découvrez des restaurants d'exception sélectionnés par nos soins.</h2>
+                <button class="presentation__explore">
+                    Explorer nos restaurants
+                </button>
+            </section>
 
-        <section class="instructions">
-            <h2>Fonctionnement</h2>
-            <div class="instructions__steps step-1">
-                <div class="instructions__steps__num">
-                    <p>1</p>
-                </div>
-                <div class="instructions__steps__text text-1">
-                    <i class="fas fa-mobile-alt"></i>
-                    <p>Choisissez un restaurant</p>
-                </div>
-            </div>
-            <div class="instructions__steps step-2">
-                <div class="instructions__steps__num">
-                    <p>2</p>
-                </div>
-                <div class="instructions__steps__text text-2">
-                    <i class="fas fa-list-ul"></i>
-                    <p>Composez votre menu</p>
-                </div>
-            </div>
-            <div class="instructions__steps step-3">
-                <div class="instructions__steps__num">
-                    <p>3</p>
-                </div>
-                <div class="instructions__steps__text text-3">
-                    <i class="fas fa-store"></i>
-                    <p>Dégustez au restaurant</p>
-                </div>
-            </div>
-
-        </section>
-
-        <main class="restaurants">
-            <h2>Restaurants</h2>
-            <div class="cards">
-                <a href="./menu_taste.html" class="cards__restaurant card-1">
-                    <div class="cards__restaurant__image cards__restaurant__image--palette">
+            <section class="instructions">
+                <h2>Fonctionnement</h2>
+                <div class="instructions__steps step-1">
+                    <div class="instructions__steps__num">
+                        <p>1</p>
                     </div>
-                    <div class="cards__restaurant__description">
-                        <div class="cards__restaurants__text" >
-                            <h3>La palette du goût</h3>
-                            <p>Ménilmontant</p>
+                    <div class="instructions__steps__text text-1">
+                        <i class="fas fa-mobile-alt"></i>
+                        <p>Choisissez un restaurant</p>
+                    </div>
+                </div>
+                <div class="instructions__steps step-2">
+                    <div class="instructions__steps__num">
+                        <p>2</p>
+                    </div>
+                    <div class="instructions__steps__text text-2">
+                        <i class="fas fa-list-ul"></i>
+                        <p>Composez votre menu</p>
+                    </div>
+                </div>
+                <div class="instructions__steps step-3">
+                    <div class="instructions__steps__num">
+                        <p>3</p>
+                    </div>
+                    <div class="instructions__steps__text text-3">
+                        <i class="fas fa-store"></i>
+                        <p>Dégustez au restaurant</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <main class="restaurants">
+                <h2>Restaurants</h2>
+                <div class="cards">
+                    <a href="./menu_taste.html" class="cards__restaurant card-1">
+                        <div class="cards__restaurant__image cards__restaurant__image--palette">
                         </div>
-                    </div>
-                </a>
-                <div class="cards__new">
-                    <p>Nouveau</p>
-                </div>
-                <label class="custom-checkbox cards__restaurant__like like-1">
-                    <input type="checkbox">
-                        <i class="far fa-heart unchecked"></i>
-                        <i class="fas fa-heart checked"></i>
-                </label>
-                    
-                
-                <a href="./menu_enchanted.html" class="cards__restaurant card-2">
-                    <div class="cards__restaurant__image cards__restaurant__image--note">
-                    </div>
-                    <div class="cards__restaurant__description">
-                        <div class="cards__restaurant__text">
-                            <h3>La note enchantée</h3>
-                            <p>Charonne</p>
+                        <div class="cards__restaurant__description">
+                            <div class="cards__restaurants__text" >
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
                         </div>
-                    </div>
                     </a>
                     <div class="cards__new">
                         <p>Nouveau</p>
                     </div>
-                    <label class="custom-checkbox cards__restaurant__like like-2">
+                    <label class="custom-checkbox cards__restaurant__like like-1">
                         <input type="checkbox">
                             <i class="far fa-heart unchecked"></i>
-                            <i class="fas fa-heart checked"></i>
+                            <img src="images/logo/heart.svg" alt="heart" class="checked">
+                    </label>
+                        
+                    
+                    <a href="./menu_enchanted.html" class="cards__restaurant card-2">
+                        <div class="cards__restaurant__image cards__restaurant__image--note">
+                        </div>
+                        <div class="cards__restaurant__description">
+                            <div class="cards__restaurant__text">
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                        </div>
+                        </a>
+                        <div class="cards__new">
+                            <p>Nouveau</p>
+                        </div>
+                        <label class="custom-checkbox cards__restaurant__like like-2">
+                            <input type="checkbox">
+                                <i class="far fa-heart unchecked"></i>
+                                <img src="images/logo/heart.svg" alt="heart" class="checked">
+                        </label>
+                        
+                    
+                    <a href="./menu_frenchstyle.html" class="cards__restaurant card-3">
+                        <div class="cards__restaurant__image cards__restaurant__image--french">
+                        </div>
+                        <div class="cards__restaurant__description">
+                            <div class="cards__restaurant__text">
+                                <h3>À la française</h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cards__new--empty">
+                        <p></p>
+                    </div>
+                    <label class="custom-checkbox cards__restaurant__like like-3">
+                        <input type="checkbox">
+                            <i class="far fa-heart unchecked"></i>
+                            <img src="images/logo/heart.svg" alt="heart" class="checked">
                     </label>
                     
-                
-                <a href="./menu_frenchstyle.html" class="cards__restaurant card-3">
-                    <div class="cards__restaurant__image cards__restaurant__image--french">
-                    </div>
-                    <div class="cards__restaurant__description">
-                        <div class="cards__restaurant__text">
-                            <h3>À la française</h3>
-                            <p>Cité Rouge</p>
+                    <a href="./menu_sensesdelight.html" class="cards__restaurant card-4">
+                        <div class="cards__restaurant__image cards__restaurant__image--sense">
                         </div>
-                    </div>
-                </a>
-                <div class="cards__new--empty">
-                    <p></p>
-                </div>
-                <label class="custom-checkbox cards__restaurant__like like-3">
-                    <input type="checkbox">
-                        <i class="far fa-heart unchecked"></i>
-                        <img src="images/logo/heart.svg" alt="heart" class="checked">
-                </label>
-                
-                <a href="./menu_sensesdelight.html" class="cards__restaurant card-4">
-                    <div class="cards__restaurant__image cards__restaurant__image--sense">
-                    </div>
-                    <div class="cards__restaurant__description">
-                        <div class="cards__restaurant__text">
-                            <h3>Le délice des sens</h3>
-                            <p>Folie-Méricourt</p>
+                        <div class="cards__restaurant__description">
+                            <div class="cards__restaurant__text">
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
                         </div>
+                    </a>
+                    <div class="cards__new--empty">
+                        <p></p>
                     </div>
-                </a>
-                <div class="cards__new--empty">
-                    <p></p>
+                    <label class="custom-checkbox cards__restaurant__like like-4">
+                        <input type="checkbox">
+                            <i class="far fa-heart unchecked"></i>
+                            <img src="images/logo/heart.svg" alt="heart" class="checked">
+                    </label>
                 </div>
-                <label class="custom-checkbox cards__restaurant__like like-4">
-                    <input type="checkbox">
-                        <i class="far fa-heart unchecked"></i>
-                        <i class="fas fa-heart checked"></i>
-                </label>
-            </div>
-        </main>
+            </main>
 
-        <footer>
-            <div class="footer__logo">
-                <a href="#">ohmyfood</a>               
-            </div>
-            <div class="footer__links">
-                <div class="footer__links__a">
-                    <i class="fas fa-utensils"></i>
-                    <a href="#">Proposer un restaurant</a>
+            <footer>
+                <div class="footer__logo">
+                    <a href="#">ohmyfood</a>               
                 </div>
-                <div class="footer__links__a">
-                    <i class="fas fa-hands-helping"></i>
-                    <a href="#">Devenir partenaire</a>
+                <div class="footer__links">
+                    <div class="footer__links__a">
+                        <i class="fas fa-utensils"></i>
+                        <a href="#">Proposer un restaurant</a>
+                    </div>
+                    <div class="footer__links__a">
+                        <i class="fas fa-hands-helping"></i>
+                        <a href="#">Devenir partenaire</a>
+                    </div>
+                    <div class="footer__links__a">
+                        <a href="#">Mentions légales</a>
+                    </div>
+                    <div class="footer__links__a">
+                        <a href="mailto:eloi.magnien@gmail.com">Contact</a>
+                    </div>
                 </div>
-                <div class="footer__links__a">
-                    <a href="#">Mentions légales</a>
-                </div>
-                <div class="footer__links__a">
-                    <a href="mailto:eloi.magnien@gmail.com">Contact</a>
-                </div>
-            </div>
-        </footer>
-        
+            </footer>
+        </div>
     </body>
 </html>
 
