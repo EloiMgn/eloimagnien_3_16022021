@@ -42,7 +42,7 @@
 @keyframes icon {
   0% {
     transform: translateX(50px) rotate(360deg);
-    opacity: 0.1;
+    opacity: 0;
   }
   100% {
     transform: translateX(0px) rotate(0deg);
