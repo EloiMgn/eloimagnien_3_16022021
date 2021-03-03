@@ -66,6 +66,10 @@ body{
     h3{
         font-size: 110%;
         font-weight: 500;
+        margin: 3px;
+    }
+    p{
+        margin: 3px;
     }
     &__header{
         display: flex;
@@ -89,18 +93,7 @@ body{
         border-radius: 2ex;
         @include box-shadow;
 
-        &__text{
-            width: 260px;
-            height: 43px;
-            margin: 11px 27px 10px 9px;
-            padding: 2px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
+    
         &__price{
             font-size: 100%;
             font-weight: 700;

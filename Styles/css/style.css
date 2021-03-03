@@ -195,6 +195,40 @@ body a {
   animation: 350ms ease 250ms 1 normal both running icon;
 }
 
+.text__checked {
+  display: none;
+}
+
+.text__unchecked {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 260px;
+  height: 43px;
+  margin: 11px 27px 10px 9px;
+  padding: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#plate-1:checked ~ .text__checked, #plate-2:checked ~ .text__checked, #plate-3:checked ~ .text__checked, #plate-4:checked ~ .text__checked, #plate-5:checked ~ .text__checked, #plate-6:checked ~ .text__checked, #plate-7:checked ~ .text__checked, #plate-8:checked ~ .text__checked, #plate-9:checked ~ .text__checked, #plate-10:checked ~ .text__checked {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 260px;
+  height: 43px;
+  margin: 11px 27px 10px 9px;
+  padding: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#plate-1:checked ~ .text__unchecked, #plate-2:checked ~ .text__unchecked, #plate-3:checked ~ .text__unchecked, #plate-4:checked ~ .text__unchecked, #plate-5:checked ~ .text__unchecked, #plate-6:checked ~ .text__unchecked, #plate-7:checked ~ .text__unchecked, #plate-8:checked ~ .text__unchecked, #plate-9:checked ~ .text__unchecked, #plate-10:checked ~ .text__unchecked {
+  display: none;
+}
+
 .header {
   width: 100%;
   z-index: 1;
@@ -315,6 +349,10 @@ body {
 .menu h3 {
   font-size: 110%;
   font-weight: 500;
+  margin: 3px;
+}
+.menu p {
+  margin: 3px;
 }
 .menu__header {
   display: flex;
@@ -336,18 +374,6 @@ body {
   margin: 10px 7px;
   border-radius: 2ex;
   box-shadow: 0px 5px 5px -1px #e5e5e5;
-}
-.menu__plates__text {
-  width: 260px;
-  height: 43px;
-  margin: 11px 27px 10px 9px;
-  padding: 2px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .menu__plates__price {
   font-size: 100%;
