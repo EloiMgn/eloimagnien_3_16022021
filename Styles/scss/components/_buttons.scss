@@ -8,6 +8,9 @@
     @include auto-gradient-bg($color-secondary);
     @include box-shadow;
     transition: all 400ms;
+    a{
+        color: white;
+    }
     &:hover{
         @include auto-gradient-bg(lighten($color-secondary, 5));
         @include box-shadow-hover;

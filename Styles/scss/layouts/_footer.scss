@@ -1,6 +1,8 @@
 footer{
     background-color: $color-prices;
     height: fit-content;
+    display: flex;
+    justify-content: space-between;
     @media screen and (min-width: 1024px){
         background-color: $color-icons;
     }
@@ -28,3 +30,24 @@ footer{
 
     }
 }
+
+.gototop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    width: 60px;
+    height: 70px;
+    flex-wrap: wrap;
+    i{
+        font-size: 150%;
+        color: white;
+    }
+    p{
+        color: white;
+        font-weight: 600;
+        font-size: 80%;
+    }
+  }
