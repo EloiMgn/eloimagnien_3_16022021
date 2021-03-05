@@ -1,3 +1,4 @@
+
 @keyframes cards-appearance {
   0% {
     transform: translateY(30px);
@@ -208,7 +209,6 @@ body a {
   margin: 11px 27px 10px 9px;
   padding: 2px;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
@@ -221,7 +221,6 @@ body a {
   margin: 11px 27px 10px 9px;
   padding: 2px;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
