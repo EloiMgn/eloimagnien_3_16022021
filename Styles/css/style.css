@@ -248,10 +248,7 @@ body a {
 
 .lds-hourglass {
   display: inline-block;
-  position: sticky;
-  top: 50%;
-  left: 50%;
-  animation: 0ms ease 2000ms 1 normal both running -load;
+  animation: 0ms ease 10000ms 1 normal both running -load;
 }
 
 .lds-hourglass::after {
@@ -264,7 +261,7 @@ body a {
   box-sizing: border-box;
   border: 32px solid black;
   border-color: #9356DC transparent #FF79DA transparent;
-  animation: lds-hourglass 1.2s 5;
+  animation: lds-hourglass 1.2s infinite;
 }
 
 @keyframes lds-hourglass {
@@ -282,14 +279,19 @@ body a {
 }
 .loaded {
   opacity: 0;
-  animation: 0ms ease 2000ms 1 normal both running load;
+  animation: 0ms ease 10000ms 1 normal both running load;
 }
 
 .loading {
   opacity: 1;
-  position: relative;
-  height: 5000px;
-  animation: 0ms ease 2000ms 1 normal both running -load;
+  position: sticky;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  animation: 0ms ease 10000ms 1 normal both running -load;
 }
 
 .header {
