@@ -94,6 +94,7 @@
   to {
     display: none;
     opacity: 0;
+    height: 0;
   }
 }
 @keyframes close {
@@ -243,6 +244,53 @@ body a {
   right: 0;
   left: 0;
   bottom: 0;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: sticky;
+  top: 50%;
+  left: 45%;
+  right: 45%;
+  animation: 0ms ease 2000ms 1 normal both running -load;
+}
+
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid black;
+  border-color: #9356DC transparent #FF79DA transparent;
+  animation: lds-hourglass 1.2s 5;
+}
+
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+.loaded {
+  opacity: 0;
+  animation: 0ms ease 2000ms 1 normal both running load;
+}
+
+.loading {
+  opacity: 1;
+  position: relative;
+  height: 5000px;
+  animation: 0ms ease 2000ms 1 normal both running -load;
 }
 
 .header {
@@ -448,55 +496,6 @@ body {
 
 .plate-10 {
   animation: 750ms ease 1100ms 1 normal both running cards-appearance;
-}
-
-.load {
-  width: 30vh;
-  height: 22.5vh;
-  display: flex;
-  justify-content: space-evenly;
-  animation: 0ms 2000ms 1 normal both running close;
-  position: absolute;
-  top: 350px;
-  left: 70px;
-}
-.load__bar {
-  background: #FF79DA;
-  background: linear-gradient(175deg, #ff46cc, #9356DC);
-  height: 100%;
-  width: 3vh;
-  animation: bars 700ms backwards 3 ease-in-out alternate;
-}
-.load__bar--1 {
-  animation-delay: 140ms;
-}
-.load__bar--2 {
-  animation-delay: 280ms;
-}
-.load__bar--3 {
-  animation-delay: 420ms;
-}
-.load__bar--4 {
-  animation-delay: 560ms;
-}
-.load__bar--5 {
-  animation-delay: 700ms;
-}
-
-.loaded {
-  opacity: 0;
-  animation: 0ms ease 2000ms 1 normal both running load;
-}
-
-.loading {
-  opacity: 1;
-  margin: auto;
-  height: 100%;
-  position: sticky;
-  top: 0px;
-  bottom: 300px;
-  left: 70px;
-  animation: 0ms ease 2000ms 1 normal both running -load;
 }
 
 footer {
