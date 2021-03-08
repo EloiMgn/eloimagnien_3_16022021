@@ -30,3 +30,14 @@
         display: none;
     }
 }
+
+.plate-1, .plate-2, .plate-3, .plate-4, .plate-5, .plate-6, .plate-7, .plate-8, .plate-9, .plate-10{
+  position: relative;
+}
+.plate_label{
+  position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
