@@ -1,39 +1,46 @@
-body{
+body {
     height: fit-content;
-    @media screen and (min-width: 1024px){
+
+    @media screen and (min-width: 1024px) {
         width: 400px;
         position: relative;
         margin: auto;
         background-color: $color-prices;
-        
+
     }
 }
-.banner{
+
+.banner {
     height: 260px;
     width: 100%;
     object-fit: cover;
-    &--palette{
+
+    &--palette {
         background-image: url(../../images/restaurants/palette_du_gout.jpg);
         background-size: cover;
         background-position: center;
     }
-    &--note{
+
+    &--note {
         background-image: url(../../images/restaurants/note_enchantée.jpg);
         background-size: cover;
         background-position: center;
     }
-    &--french{
+
+    &--french {
         background-image: url(../../images/restaurants/a_la_francaise.jpg);
         background-size: cover;
         background-position: center;
     }
-    &--sense{
+
+    &--sense {
         background-image: url(../../images/restaurants/delice_des_sens.jpg);
         background-size: cover;
         background-position: center;
     }
 }
-.menu{
+
+.menu {
     background-color: $color-bg-1;
     padding-top: 38px;
     margin-top: -38px;
@@ -43,7 +50,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    &__border{
+
+    &__border {
         background-color: $color-tertiary;
         width: 40px;
         height: 3px;
@@ -51,11 +59,13 @@ body{
         align-self: flex-start;
         animation: 750ms ease 250ms 1 normal both running border-appearance;
     }
-    h1{
+
+    h1 {
         font-family: 'Shrikhand', cursive;
         font-size: 160%;
     }
-    h2{
+
+    h2 {
         font-size: 120%;
         font-weight: 300;
         text-transform: uppercase;
@@ -63,28 +73,33 @@ body{
         align-self: flex-start;
         animation: 750ms ease 100ms 1 normal both running title-appearance;
     }
-    h3{
+
+    h3 {
         font-size: 110%;
         font-weight: 500;
         margin: 3px;
     }
-    p{
+
+    p {
         margin: 3px;
     }
-    &__header{
+
+    &__header {
         display: flex;
         justify-content: space-between;
         margin: 0 38px 19px 19px;
         width: 320px;
     }
-    &__cards{
+
+    &__cards {
         display: flex;
         flex-direction: column;
         align-content: center;
         align-items: center;
-        
+
     }
-    &__plates{
+
+    &__plates {
         display: flex;
         background-color: white;
         height: 68px;
@@ -93,15 +108,16 @@ body{
         border-radius: 2ex;
         @include box-shadow;
 
-    
-        &__price{
+
+        &__price {
             font-size: 100%;
             font-weight: 700;
             color: $color-prices;
             margin: 42px 21px 15px 0;
         }
     }
-    &__button{
+
+    &__button {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -109,38 +125,48 @@ body{
         align-items: center;
     }
 }
-.checkbox-menu{
+
+.checkbox-menu {
     width: 350px;
     height: 68px;
 }
 
-.plate-1{
+.plate-1 {
     animation: 750ms ease 200ms 1 normal both running cards-appearance;
 }
-.plate-2{
+
+.plate-2 {
     animation: 750ms ease 300ms 1 normal both running cards-appearance;
 }
-.plate-3{
+
+.plate-3 {
     animation: 750ms ease 400ms 1 normal both running cards-appearance;
 }
-.plate-4{
+
+.plate-4 {
     animation: 750ms ease 500ms 1 normal both running cards-appearance;
 }
-.plate-5{
+
+.plate-5 {
     animation: 750ms ease 600ms 1 normal both running cards-appearance;
 }
-.plate-6{
+
+.plate-6 {
     animation: 750ms ease 700ms 1 normal both running cards-appearance;
 }
-.plate-7{
+
+.plate-7 {
     animation: 750ms ease 800ms 1 normal both running cards-appearance;
 }
-.plate-8{
+
+.plate-8 {
     animation: 750ms ease 900ms 1 normal both running cards-appearance;
 }
-.plate-9{
+
+.plate-9 {
     animation: 750ms ease 1000ms 1 normal both running cards-appearance;
 }
-.plate-10{
+
+.plate-10 {
     animation: 750ms ease 1100ms 1 normal both running cards-appearance;
 }

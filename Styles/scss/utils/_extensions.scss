@@ -22,6 +22,7 @@
         opacity: 1;
     }
 }
+
 @keyframes border-appearance {
     0% {
         transform: translateX(500px);
@@ -33,6 +34,7 @@
         opacity: 1;
     }
 }
+
 @keyframes checkbox {
     0% {
         transform-origin: right;
@@ -57,23 +59,27 @@
         opacity: 1;
     }
 }
+
 @keyframes like {
-    0%{
+    0% {
         transform-origin: center;
         scale: 0;
-        
+
     }
-    100%{
+
+    100% {
         scale: 1;
         opacity: 1;
     }
 }
+
 @keyframes -like {
-    0%{
+    0% {
         scale: 1;
         opacity: 1;
     }
-    100%{
+
+    100% {
         scale: 0;
         opacity: 0;
     }
@@ -83,36 +89,42 @@
     0% {
         transform: scaleY(0.5);
     }
+
     100% {
         transform: scaleY(1.0);
     }
 }
+
 @keyframes load {
     from {
         opacity: 0;
         display: none;
     }
+
     to {
         opacity: 1;
     }
 }
+
 @keyframes -load {
     from {
         opacity: 1;
-        
+
     }
+
     to {
         display: none;
         opacity: 0;
         height: 0;
     }
 }
+
 @keyframes close {
     from {
-        scale: 1;   
+        scale: 1;
     }
+
     to {
         scale: 0;
     }
 }
-

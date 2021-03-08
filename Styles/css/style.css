@@ -250,12 +250,11 @@ body a {
   display: inline-block;
   position: sticky;
   top: 50%;
-  left: 45%;
-  right: 45%;
+  left: 50%;
   animation: 0ms ease 2000ms 1 normal both running -load;
 }
 
-.lds-hourglass:after {
+.lds-hourglass::after {
   content: " ";
   display: block;
   border-radius: 50%;
