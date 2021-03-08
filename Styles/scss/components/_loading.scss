@@ -1,7 +1,7 @@
 .lds-hourglass {
     display: inline-block;
     
-    animation: 0ms ease 10000ms 1 normal both running -load;
+    animation: 0ms ease 2000ms 1 normal both running -load;
 }
 
 .lds-hourglass::after {
@@ -35,7 +35,7 @@
 
 .loaded {
     opacity: 0;
-    animation: 0ms ease 10000ms 1 normal both running load;
+    animation: 0ms ease 2000ms 1 normal both running load;
 }
 
 .loading {
@@ -47,5 +47,5 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    animation: 0ms ease 10000ms 1 normal both running -load;
+    animation: 0ms ease 2000ms 1 normal both running -load;
 }
