@@ -123,6 +123,7 @@ main{
     align-content: center;
     height: fit-content;
     margin: 0 0 55px 0;
+   
 
     &__new{
         background-color: $color-tertiary;
@@ -138,6 +139,11 @@ main{
         align-items: center;
         align-content: center;
         border-radius: 0.3ex;
+        @media screen and (min-width: 768px) {
+            top: -330px;
+            left: 170px;
+        }
+
         
         &--empty{
             background-color: none;
@@ -152,6 +158,10 @@ main{
             justify-content: center;
             align-items: center;
             align-content: center;
+            @media screen and (min-width: 768px) {
+                top: -330px;
+                left: 170px;
+            }
         }
     }
     
@@ -161,6 +171,11 @@ main{
         @include box-shadow;
         margin: 9px 20px;
         border-radius: 3ex;
+        @media screen and (min-width: 768px) {
+            width: 450px;
+            height: 335px;
+        }
+        
         
         &__description{
             display: flex;
@@ -172,9 +187,15 @@ main{
                 font-weight: 700;
                 font-size: 110%;
                 margin-bottom: 7px;
+                @media screen and (min-width: 768px) {
+                    font-size: 150%;
+                }
             }
             p{
                 font-weight: 300;
+                @media screen and (min-width: 768px) {
+                    font-size: 120%;
+                }
             }
         }
         &__like{
@@ -190,11 +211,20 @@ main{
             justify-content: center;
             align-items: center;
             align-content: center;
-
+            @media screen and (min-width: 768px) {
+                top: -125px; 
+                left: 170px;
+                width: 50px;
+                height: 50px;
+                font-size: 200%;
+            }
         }
         &__image{
             height: 174px;
             border-radius: 3ex 3ex 0 0;
+            @media screen and (min-width: 768px) {
+                height: 233px;
+            }
             
             &--palette{
                 background-image: url(../../images/restaurants/palette_du_gout.jpg);
