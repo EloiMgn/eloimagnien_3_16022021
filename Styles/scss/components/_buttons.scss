@@ -13,6 +13,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    @media screen and (min-width: 768px) {
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
     a{
         color: white;
     }

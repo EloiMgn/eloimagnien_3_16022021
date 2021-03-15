@@ -6,7 +6,7 @@
         justify-content: space-between;
         background-color: $color-bg-3;
         @include box-shadow;
-        @media screen and (min-width: 1024px){
+        @media screen and (min-width: 768px){
             align-content: center;
             justify-content: center;
             text-align: center;
@@ -21,7 +21,7 @@
             @include margin-header;
             font-size: 160%;
 
-            @media screen and (min-width: 1024px){
+            @media screen and (min-width: 768px){
                 justify-self: flex-start;
             }
         }
@@ -30,7 +30,7 @@
             align-items: center;
             margin-right: 100px;
             width: 80%;
-            @media screen and (min-width: 1024px){
+            @media screen and (min-width: 768px){
                 width: 170px;
                 align-content: center;
                 justify-content: center;

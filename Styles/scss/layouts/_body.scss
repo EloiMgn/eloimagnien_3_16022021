@@ -2,11 +2,9 @@ body {
     height: fit-content;
 
     @media screen and (min-width: 768px) {
-        width: 768px;
         position: relative;
         margin: auto;
         background-color: $color-prices;
-
     }
 }
 
@@ -50,6 +48,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 1024px) {
+        padding: 20px;
+    }
 
     &__border {
         background-color: $color-tertiary;
@@ -96,7 +97,10 @@ body {
         flex-direction: column;
         align-content: center;
         align-items: center;
-
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
 
     &__plates {
@@ -107,6 +111,10 @@ body {
         margin: 10px 7px;
         border-radius: 2ex;
         @include box-shadow;
+        @media screen and (min-width: 768px) {
+           width: 300px;
+        }
+        
 
 
         &__price {
@@ -126,10 +134,7 @@ body {
     }
 }
 
-.checkbox-menu {
-    width: 350px;
-    height: 68px;
-}
+
 
 .plate-1 {
     animation: 750ms ease 200ms 1 normal both running cards-appearance;

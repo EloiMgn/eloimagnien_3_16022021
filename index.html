@@ -45,8 +45,6 @@
     <link rel="stylesheet" href="Styles/css/style.css">
     <title>OhMyfood! - Accueil</title>
 
-
-
 </head>
 
 
@@ -73,25 +71,23 @@
         <section class="presentation">
             <h1>Réservez le menu qui vous convient</h1>
             <h2>Découvrez des restaurants d'exception sélectionnés par nos soins.</h2>
-            <div class="presentation__explore">
-                <a href="./restaurants/la_palette_du_goût.html">Explorer nos restaurants</a>
-            </div>
+                <a class="presentation__explore" href="#restaurants">Explorer nos restaurants</a>
         </section>
 
         <section class="instructions">
             <h2>Fonctionnement</h2>
             <div class="instructions__steps step-1">
                 <div class="instructions__steps__num">
-                    <p>1</p>
+                    <span>1</span>
                 </div>
                 <div class="instructions__steps__text text-1">
                     <i class="fas fa-mobile-alt"></i>
-                    <a href="restaurants/la_palette_du_goût.html">Choisissez un restaurant</a>
+                    <a href="#restaurants">Choisissez un restaurant</a>
                 </div>
             </div>
             <div class="instructions__steps step-2">
                 <div class="instructions__steps__num">
-                    <p>2</p>
+                    <span>2</span>
                 </div>
                 <div class="instructions__steps__text text-2">
                     <i class="fas fa-list-ul"></i>
@@ -100,7 +96,7 @@
             </div>
             <div class="instructions__steps step-3">
                 <div class="instructions__steps__num">
-                    <p>3</p>
+                    <span>3</span>
                 </div>
                 <div class="instructions__steps__text text-3">
                     <i class="fas fa-store"></i>
@@ -110,7 +106,7 @@
 
         </section>
 
-        <main class="restaurants">
+        <main class="restaurants" id="restaurants">
             <h2>Restaurants</h2>
             <div class="cards">
                 <a href="./restaurants/la_palette_du_goût.html" class="cards__restaurant card-1">
@@ -196,22 +192,20 @@
         <footer>
             <div class="footer">
                 <div class="footer__logo">
-                    <a href="#">ohmyfood</a>
+                    <a href="./">ohmyfood</a>
                 </div>
                 <div class="footer__links">
                     <div class="footer__links__a">
-                        <i class="fas fa-utensils"></i>
-                        <a href="./index.html">Proposer un restaurant</a>
+                        <a href="./"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
                     </div>
                     <div class="footer__links__a">
-                        <i class="fas fa-hands-helping"></i>
-                        <a href="#">Devenir partenaire</a>
+                        <a href="./"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
                     </div>
                     <div class="footer__links__a">
-                        <a href="#">Mentions légales</a>
+                        <a href="./">Mentions légales</a>
                     </div>
                     <div class="footer__links__a">
-                        <a href="mailto:example@gmail.com"">Contact</a>
+                        <a href="mailto:example@gmail.com">Contact</a>
                     </div>
                 </div>
             </div>

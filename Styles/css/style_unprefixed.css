@@ -139,14 +139,6 @@ body a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-}
-@media screen and (min-width: 768px) {
-  .presentation__explore, .menu__button {
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
 }
 .presentation__explore a, .menu__button a {
   color: white;
@@ -184,18 +176,6 @@ body a {
   left: -28px;
 }
 
-@media screen and (min-width: 768px) {
-  .custom-checkbox input[type=checkbox]:hover ~ .checked {
-    display: inline-block;
-    color: #9356DC;
-    animation: 500ms ease-in 50ms 1 normal both running like;
-    cursor: pointer;
-  }
-  .custom-checkbox input[type=checkbox]:hover ~ .unchecked {
-    animation: 500ms ease-out 50ms 1 normal both running -like;
-    cursor: pointer;
-  }
-}
 .custom-checkbox input[type=checkbox]:checked ~ .checked {
   display: inline-block;
   color: #9356DC;
@@ -210,25 +190,6 @@ body a {
   width: 0;
 }
 
-@media screen and (min-width: 768px) {
-  .checkbox-menu input[type=checkbox]:hover ~ .checked {
-    background-color: #99E2D0;
-    width: 60px;
-    height: 68px;
-    border-top-right-radius: 2ex;
-    border-bottom-right-radius: 2ex;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    animation: 500ms ease 0ms 1 normal both running checkbox;
-  }
-  .checkbox-menu input[type=checkbox]:hover ~ .checked i {
-    color: white;
-    animation: 350ms ease 250ms 1 normal both running icon;
-  }
-}
 .checkbox-menu input[type=checkbox]:checked ~ .checked {
   background-color: #99E2D0;
   width: 60px;
@@ -274,22 +235,8 @@ body a {
   overflow: hidden;
   white-space: nowrap;
 }
-#plate-1:hover ~ .text__checked, #plate-2:hover ~ .text__checked, #plate-3:hover ~ .text__checked, #plate-4:hover ~ .text__checked, #plate-5:hover ~ .text__checked, #plate-6:hover ~ .text__checked, #plate-7:hover ~ .text__checked, #plate-8:hover ~ .text__checked, #plate-9:hover ~ .text__checked, #plate-10:hover ~ .text__checked {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 260px;
-  height: 43px;
-  margin: 11px 27px 10px 9px;
-  padding: 2px;
-  overflow: hidden;
-  white-space: nowrap;
-}
 
 #plate-1:checked ~ .text__unchecked, #plate-2:checked ~ .text__unchecked, #plate-3:checked ~ .text__unchecked, #plate-4:checked ~ .text__unchecked, #plate-5:checked ~ .text__unchecked, #plate-6:checked ~ .text__unchecked, #plate-7:checked ~ .text__unchecked, #plate-8:checked ~ .text__unchecked, #plate-9:checked ~ .text__unchecked, #plate-10:checked ~ .text__unchecked {
-  display: none;
-}
-#plate-1:hover ~ .text__unchecked, #plate-2:hover ~ .text__unchecked, #plate-3:hover ~ .text__unchecked, #plate-4:hover ~ .text__unchecked, #plate-5:hover ~ .text__unchecked, #plate-6:hover ~ .text__unchecked, #plate-7:hover ~ .text__unchecked, #plate-8:hover ~ .text__unchecked, #plate-9:hover ~ .text__unchecked, #plate-10:hover ~ .text__unchecked {
   display: none;
 }
 
@@ -303,7 +250,6 @@ body a {
   right: 0;
   left: 0;
   bottom: 0;
-  cursor: pointer;
 }
 
 .lds-hourglass {
@@ -364,7 +310,7 @@ body a {
   background-color: #ffff;
   box-shadow: 0px 5px 5px -1px #e5e5e5;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .header__menu {
     align-content: center;
     justify-content: center;
@@ -381,7 +327,7 @@ body a {
   margin-bottom: 11px;
   font-size: 160%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .header__menu__arrow {
     justify-self: flex-start;
   }
@@ -393,7 +339,7 @@ body a {
   margin-right: 100px;
   width: 80%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .header__menu__logo {
     width: 170px;
     align-content: center;
@@ -407,6 +353,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   body {
+    width: 768px;
     position: relative;
     margin: auto;
     background-color: #353535;
@@ -450,11 +397,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (min-width: 1024px) {
-  .menu {
-    padding: 20px;
-  }
-}
 .menu__border {
   background-color: #99E2D0;
   width: 40px;
@@ -495,12 +437,6 @@ body {
   align-content: center;
   align-items: center;
 }
-@media screen and (min-width: 1024px) {
-  .menu__cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
 .menu__plates {
   display: flex;
   background-color: white;
@@ -509,11 +445,6 @@ body {
   margin: 10px 7px;
   border-radius: 2ex;
   box-shadow: 0px 5px 5px -1px #e5e5e5;
-}
-@media screen and (min-width: 768px) {
-  .menu__plates {
-    width: 300px;
-  }
 }
 .menu__plates__price {
   font-size: 100%;
@@ -527,6 +458,11 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+
+.checkbox-menu {
+  width: 350px;
+  height: 68px;
 }
 
 .plate-1 {
@@ -590,9 +526,6 @@ footer {
   width: 99px;
   height: 40px;
 }
-.footer__logo a:hover {
-  text-shadow: 1px 1px 2px white;
-}
 
 .footer__links {
   color: white;
@@ -603,9 +536,6 @@ footer {
 }
 .footer__links a {
   color: white;
-}
-.footer__links a:hover {
-  text-shadow: 1px 1px 2px white;
 }
 .footer__links__a {
   margin: 10px 0 5px 25px;
@@ -621,9 +551,6 @@ footer {
   width: 60px;
   height: 70px;
   flex-wrap: wrap;
-}
-.gototop:hover {
-  text-shadow: 1px 1px 2px white;
 }
 .gototop i {
   font-size: 150%;
@@ -809,9 +736,6 @@ main {
   margin: 9px 20px;
   border-radius: 3ex;
 }
-.cards__restaurant:hover {
-  box-shadow: 0px 5px 5px 1px #bfbfbf;
-}
 @media screen and (min-width: 768px) {
   .cards__restaurant {
     width: 450px;
@@ -920,4 +844,4 @@ main {
   animation: 750ms ease-in-out 2450ms 1 normal both running title-appearance;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style_unprefixed.css.map */

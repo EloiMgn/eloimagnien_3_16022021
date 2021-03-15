@@ -123,6 +123,7 @@ main{
     align-content: center;
     height: fit-content;
     margin: 0 0 55px 0;
+    
    
 
     &__new{
@@ -171,6 +172,9 @@ main{
         @include box-shadow;
         margin: 9px 20px;
         border-radius: 3ex;
+        &:hover{
+            @include box-shadow-hover;
+        }
         @media screen and (min-width: 768px) {
             width: 450px;
             height: 335px;

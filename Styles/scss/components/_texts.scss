@@ -1,5 +1,6 @@
 .text__checked{
     display: none;
+    
   }
   .text__unchecked{
     display: flex;
@@ -11,6 +12,7 @@
     padding: 2px;
     overflow: hidden;
     white-space: nowrap;
+    
   }
 #plate-1, #plate-2, #plate-3, #plate-4, #plate-5, #plate-6, #plate-7, #plate-8, #plate-9, #plate-10{
  &:checked~.text__checked{
@@ -24,11 +26,25 @@
     overflow: hidden;
     white-space: nowrap;
     }
+    &:hover~.text__checked{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 260px;
+      height: 43px;
+      margin: 11px 27px 10px 9px;
+      padding: 2px;
+      overflow: hidden;
+      white-space: nowrap;
+      }
 }
 #plate-1, #plate-2, #plate-3, #plate-4, #plate-5, #plate-6, #plate-7, #plate-8, #plate-9, #plate-10{
     &:checked~.text__unchecked{
         display: none;
     }
+    &:hover~.text__unchecked{
+      display: none;
+  }
 }
 
 .plate-1, .plate-2, .plate-3, .plate-4, .plate-5, .plate-6, .plate-7, .plate-8, .plate-9, .plate-10{
@@ -36,8 +52,9 @@
 }
 .plate_label{
   position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
 }

@@ -23,6 +23,18 @@
     }
   }
   .custom-checkbox input[type="checkbox"]{
+    @media screen and (min-width: 768px){
+        &:hover~.checked{
+          display: inline-block;
+          color: $color-primary;
+          animation: 500ms ease-in 50ms 1 normal both running like;
+          cursor: pointer;
+        }
+        &:hover~.unchecked{
+          animation: 500ms ease-out 50ms 1 normal both running -like;
+          cursor: pointer;
+        }
+      }
       &:checked~.checked {
         display: inline-block;
         color: $color-primary;
@@ -38,6 +50,26 @@
     width: 0;
   }
   .checkbox-menu input[type="checkbox"]{
+    @media screen and (min-width: 768px){
+        &:hover~.checked{
+          background-color: $color-tertiary;
+          width: 60px;
+          height: 68px;
+          border-top-right-radius: 2ex;
+          border-bottom-right-radius: 2ex;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          animation: 500ms ease 0ms 1 normal both running checkbox;
+          i{
+            color: white;
+            animation: 350ms ease 250ms 1 normal both running icon;
+          }
+        }
+        
+      }
       &:checked~.checked {
         background-color: $color-tertiary;
         width: 60px;
