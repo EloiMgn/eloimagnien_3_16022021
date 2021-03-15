@@ -111,9 +111,6 @@ body {
         margin: 10px 7px;
         border-radius: 2ex;
         @include box-shadow;
-        @media screen and (min-width: 768px) {
-           width: 300px;
-        }
         
 
 
