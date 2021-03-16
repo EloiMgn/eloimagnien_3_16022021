@@ -1,38 +1,46 @@
-footer{
+footer {
     background-color: $color-prices;
     height: fit-content;
     display: flex;
     justify-content: space-between;
-    @media screen and (min-width: 1024px){
+
+    @media screen and (min-width: 1024px) {
         background-color: $color-icons;
     }
 }
-.footer__logo{
+
+.footer__logo {
     padding: 26px 0 18px 25px;
-    a{
+
+    a {
         font-family: 'Shrikhand', cursive;
         color: white;
         width: 99px;
         height: 40px;
-        &:hover{
+
+        &:hover {
             text-shadow: 1px 1px 2px white;
         }
-    }  
+    }
 }
-.footer__links{
+
+.footer__links {
     color: white;
     padding-bottom: 37px;
-    
-    i{
+
+    i {
         margin: 0 10px 0 0;
     }
-    a{
+
+    a {
         color: white;
-        &:hover{
+
+        &:hover {
             text-shadow: 1px 1px 2px white;
         }
     }
-    &__a{
+
+    &__a {
         margin: 10px 0 5px 25px;
 
     }
@@ -48,17 +56,20 @@ footer{
     width: 60px;
     height: 70px;
     flex-wrap: wrap;
-    &:hover{
+
+    &:hover {
         text-shadow: 1px 1px 2px white;
     }
-    i{
+
+    i {
         font-size: 150%;
         color: white;
     }
-    p{
+
+    p {
         color: white;
         font-weight: 600;
         font-size: 80%;
-        
+
     }
-  }
+}

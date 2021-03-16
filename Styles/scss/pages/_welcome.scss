@@ -1,4 +1,4 @@
-.location{
+.location {
     background-color: $color-bg-2;
     display: flex;
     justify-content: space-between;
@@ -8,11 +8,13 @@
     padding-left: 104px;
     padding-right: 120px;
     z-index: 0;
-    &__icon{
+
+    &__icon {
         margin: 16px 18px 16px 0;
     }
 }
-.presentation{
+
+.presentation {
     background-color: $color-bg-1;
     display: flex;
     flex-direction: column;
@@ -20,19 +22,22 @@
     align-items: center;
     text-align: center;
     height: fit-content;
-    h1{
+
+    h1 {
         font-size: 120%;
         width: 235px;
         margin: 43px 0 10px 0;
     }
-    h2{
+
+    h2 {
         font-size: 115%;
         font-weight: 200;
         width: 310px;
         margin: 10px 0 16px 0;
     }
 }
-.instructions{
+
+.instructions {
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -42,23 +47,26 @@
     align-items: center;
     padding: 52px 0;
     background-color: $color-bg-3;
-    h2{
+
+    h2 {
         margin: 0 0 21px 0;
     }
-    &__steps{
+
+    &__steps {
         display: flex;
         justify-content: center;
         align-content: center;
         align-items: center;
         margin: 11px 0;
         width: 335px;
-        
-            &:hover{
-                i{
+
+        &:hover {
+            i {
                 color: $color-primary;
-                }
+            }
         }
-        &__text{
+
+        &__text {
             display: flex;
             justify-content: flex-start;
             align-content: center;
@@ -72,19 +80,22 @@
             font-weight: 600;
             @include box-shadow;
             cursor: pointer;
-            i{
+
+            i {
                 margin-right: 20px;
                 margin-left: 33px;
                 font-size: 120%;
                 color: $color-icons;
 
             }
-            &:hover{
+
+            &:hover {
                 background-color: lighten($color: $color-primary, $amount: 35);
                 @include box-shadow-hover;
             }
         }
-        &__num{
+
+        &__num {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -98,24 +109,28 @@
             color: white;
             border-radius: 5ex;
         }
-        
+
     }
 }
-main{
+
+main {
     height: fit-content;
 }
-.restaurants{
+
+.restaurants {
     background-color: $color-bg-1;
     display: flex;
     flex-direction: column;
     height: fit-content;
-    h2{
+
+    h2 {
         margin: 58px 0 18px 21px;
         font-weight: 700;
         font-size: 140%;
     }
 }
-.cards{
+
+.cards {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -123,10 +138,10 @@ main{
     align-content: center;
     height: fit-content;
     margin: 0 0 55px 0;
-    
-   
 
-    &__new{
+
+
+    &__new {
         background-color: $color-tertiary;
         color: darken($color: $color-tertiary, $amount: 40);
         width: 80px;
@@ -140,13 +155,14 @@ main{
         align-items: center;
         align-content: center;
         border-radius: 0.3ex;
+
         @media screen and (min-width: 768px) {
             top: -330px;
             left: 170px;
         }
 
-        
-        &--empty{
+
+        &--empty {
             background-color: none;
             color: none;
             width: 80px;
@@ -159,54 +175,62 @@ main{
             justify-content: center;
             align-items: center;
             align-content: center;
+
             @media screen and (min-width: 768px) {
                 top: -330px;
                 left: 170px;
             }
         }
     }
-    
-    &__restaurant{
+
+    &__restaurant {
         width: 335px;
         height: 250px;
         @include box-shadow;
         margin: 9px 20px;
         border-radius: 3ex;
-        &:hover{
+
+        &:hover {
             @include box-shadow-hover;
         }
+
         @media screen and (min-width: 768px) {
             width: 450px;
             height: 335px;
         }
-        
-        
-        &__description{
+
+
+        &__description {
             display: flex;
             justify-content: space-between;
             align-items: center;
             align-content: center;
             margin: 19px 24px 19px 14px;
-            h3{
+
+            h3 {
                 font-weight: 700;
                 font-size: 110%;
                 margin-bottom: 7px;
+
                 @media screen and (min-width: 768px) {
                     font-size: 150%;
                 }
             }
-            p{
+
+            p {
                 font-weight: 300;
+
                 @media screen and (min-width: 768px) {
                     font-size: 120%;
                 }
             }
         }
-        &__like{
+
+        &__like {
             font-size: 150%;
             font-weight: 200;
             position: relative;
-            top: -100px; 
+            top: -100px;
             left: 120px;
             width: 40px;
             height: 40px;
@@ -215,37 +239,43 @@ main{
             justify-content: center;
             align-items: center;
             align-content: center;
+
             @media screen and (min-width: 768px) {
-                top: -125px; 
+                top: -125px;
                 left: 170px;
                 width: 50px;
                 height: 50px;
                 font-size: 200%;
             }
         }
-        &__image{
+
+        &__image {
             height: 174px;
             border-radius: 3ex 3ex 0 0;
+
             @media screen and (min-width: 768px) {
                 height: 233px;
             }
-            
-            &--palette{
+
+            &--palette {
                 background-image: url(../../images/restaurants/palette_du_gout.jpg);
                 background-size: cover;
                 background-position: center;
             }
-            &--note{
+
+            &--note {
                 background-image: url(../../images/restaurants/note_enchantée.jpg);
                 background-size: cover;
                 background-position: center;
             }
-            &--french{
+
+            &--french {
                 background-image: url(../../images/restaurants/a_la_francaise.jpg);
                 background-size: cover;
                 background-position: center;
             }
-            &--sense{
+
+            &--sense {
                 background-image: url(../../images/restaurants/delice_des_sens.jpg);
                 background-size: cover;
                 background-position: center;
@@ -253,21 +283,27 @@ main{
         }
     }
 }
-.step-1{
+
+.step-1 {
     animation: 750ms ease 2200ms 1 normal both running cards-appearance;
 }
-.step-2{
+
+.step-2 {
     animation: 750ms ease 2300ms 1 normal both running cards-appearance;
 }
-.step-3{
+
+.step-3 {
     animation: 750ms ease 2400ms 1 normal both running cards-appearance;
 }
-.text-1{
+
+.text-1 {
     animation: 750ms ease-in-out 2250ms 1 normal both running title-appearance;
 }
-.text-2{
+
+.text-2 {
     animation: 750ms ease-in-out 2350ms 1 normal both running title-appearance;
 }
-.text-3{
+
+.text-3 {
     animation: 750ms ease-in-out 2450ms 1 normal both running title-appearance;
 }

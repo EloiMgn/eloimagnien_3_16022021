@@ -1,94 +1,100 @@
-.menu__header i{
-    font-size: 150%;
+.menu__header i {
+  font-size: 150%;
 }
 
 .custom-checkbox .checked {
+  opacity: 0;
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+
+  @media screen and (min-width: 768px) {
+    width: 32px;
+    height: 32px;
+  }
+
+  &--menu {
     opacity: 0;
-    position: absolute;
-    top: 12px;
-    left: 8px;
+    position: relative;
+    top: 3px;
     width: 24px;
     height: 24px;
-    @media screen and (min-width: 768px) {
-      width: 32px;
-      height: 32px;
+    left: -28px
   }
-    &--menu{
-      opacity: 0;
-      position: relative;
-      top: 3px;
-      width: 24px;
-      height: 24px;
-      left: -28px
+}
+
+.custom-checkbox input[type="checkbox"] {
+  @media screen and (min-width: 768px) {
+    &:hover~.checked {
+      display: inline-block;
+      color: $color-primary;
+      animation: 500ms ease-in 50ms 1 normal both running like;
+      cursor: pointer;
+    }
+
+    &:hover~.unchecked {
+      animation: 500ms ease-out 50ms 1 normal both running -like;
+      cursor: pointer;
     }
   }
-  .custom-checkbox input[type="checkbox"]{
-    @media screen and (min-width: 768px){
-        &:hover~.checked{
-          display: inline-block;
-          color: $color-primary;
-          animation: 500ms ease-in 50ms 1 normal both running like;
-          cursor: pointer;
-        }
-        &:hover~.unchecked{
-          animation: 500ms ease-out 50ms 1 normal both running -like;
-          cursor: pointer;
-        }
-      }
-      &:checked~.checked {
-        display: inline-block;
-        color: $color-primary;
-        animation: 500ms ease-in 50ms 1 normal both running like;
-      }
-      &:checked~.unchecked {
-        animation: 500ms ease-out 50ms 1 normal both running -like;
-      }
+
+  &:checked~.checked {
+    display: inline-block;
+    color: $color-primary;
+    animation: 500ms ease-in 50ms 1 normal both running like;
   }
 
-  .checkbox-menu .checked {
-    opacity: 0;
-    width: 0;
+  &:checked~.unchecked {
+    animation: 500ms ease-out 50ms 1 normal both running -like;
   }
-  .checkbox-menu input[type="checkbox"]{
-    @media screen and (min-width: 768px){
-        &:hover~.checked{
-          background-color: $color-tertiary;
-          width: 60px;
-          height: 68px;
-          border-top-right-radius: 2ex;
-          border-bottom-right-radius: 2ex;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-content: center;
-          align-items: center;
-          animation: 500ms ease 0ms 1 normal both running checkbox;
-          i{
-            color: white;
-            animation: 350ms ease 250ms 1 normal both running icon;
-          }
-        }
-        
+}
+
+.checkbox-menu .checked {
+  opacity: 0;
+  width: 0;
+}
+
+.checkbox-menu input[type="checkbox"] {
+  @media screen and (min-width: 768px) {
+    &:hover~.checked {
+      background-color: $color-tertiary;
+      width: 60px;
+      height: 68px;
+      border-top-right-radius: 2ex;
+      border-bottom-right-radius: 2ex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      animation: 500ms ease 0ms 1 normal both running checkbox;
+
+      i {
+        color: white;
+        animation: 350ms ease 250ms 1 normal both running icon;
       }
-      &:checked~.checked {
-        background-color: $color-tertiary;
-        width: 60px;
-        height: 68px;
-        border-top-right-radius: 2ex;
-        border-bottom-right-radius: 2ex;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        animation: 500ms ease 0ms 1 normal both running checkbox;
-        i{
-          color: white;
-          animation: 350ms ease 250ms 1 normal both running icon;
-        }
-      }
+    }
+
   }
 
-  
+  &:checked~.checked {
+    background-color: $color-tertiary;
+    width: 60px;
+    height: 68px;
+    border-top-right-radius: 2ex;
+    border-bottom-right-radius: 2ex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    animation: 500ms ease 0ms 1 normal both running checkbox;
 
-  
+    i {
+      color: white;
+      animation: 350ms ease 250ms 1 normal both running icon;
+    }
+  }
+}

@@ -1,28 +1,32 @@
-@mixin margin_header{
+@mixin margin_header {
     margin-top: 22px;
     margin-bottom: 11px;
 }
-@mixin box-shadow{
+
+@mixin box-shadow {
     box-shadow: 0px 5px 5px -1px #e5e5e5;
 }
-@mixin box-shadow-hover{
+
+@mixin box-shadow-hover {
     box-shadow: 0px 5px 5px 1px #bfbfbf;
 }
+
 @mixin auto-gradient-bg($color) {
 
-$topcolor: darken($color, 10);
-$bottomcolor: $color-primary;
+    $topcolor: darken($color, 10);
+    $bottomcolor: $color-primary;
 
-background: $color;
-background: linear-gradient( 175deg, $topcolor, $bottomcolor);
+    background: $color;
+    background: linear-gradient(175deg, $topcolor, $bottomcolor);
 
 }
+
 @mixin auto-gradient-color($color) {
 
     $topcolor: darken($color, 10);
     $bottomcolor: $color-primary;
-    
+
     color: $color;
     color: linear-gradient($topcolor, $bottomcolor);
-    
-    }
+
+}
