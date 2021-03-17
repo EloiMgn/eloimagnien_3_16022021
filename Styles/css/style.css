@@ -270,16 +270,7 @@ body a {
   white-space: nowrap;
 }
 
-#plate-1:checked ~ .text__checked,
-#plate-2:checked ~ .text__checked,
-#plate-3:checked ~ .text__checked,
-#plate-4:checked ~ .text__checked,
-#plate-5:checked ~ .text__checked,
-#plate-6:checked ~ .text__checked,
-#plate-7:checked ~ .text__checked,
-#plate-8:checked ~ .text__checked,
-#plate-9:checked ~ .text__checked,
-#plate-10:checked ~ .text__checked {
+.plate:checked ~ .text__checked {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -291,16 +282,7 @@ body a {
   white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
-  #plate-1:hover ~ .text__checked,
-#plate-2:hover ~ .text__checked,
-#plate-3:hover ~ .text__checked,
-#plate-4:hover ~ .text__checked,
-#plate-5:hover ~ .text__checked,
-#plate-6:hover ~ .text__checked,
-#plate-7:hover ~ .text__checked,
-#plate-8:hover ~ .text__checked,
-#plate-9:hover ~ .text__checked,
-#plate-10:hover ~ .text__checked {
+  .plate:hover ~ .text__checked {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -313,29 +295,11 @@ body a {
   }
 }
 
-#plate-1:checked ~ .text__unchecked,
-#plate-2:checked ~ .text__unchecked,
-#plate-3:checked ~ .text__unchecked,
-#plate-4:checked ~ .text__unchecked,
-#plate-5:checked ~ .text__unchecked,
-#plate-6:checked ~ .text__unchecked,
-#plate-7:checked ~ .text__unchecked,
-#plate-8:checked ~ .text__unchecked,
-#plate-9:checked ~ .text__unchecked,
-#plate-10:checked ~ .text__unchecked {
+.plate:checked ~ .text__unchecked {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  #plate-1:hover ~ .text__unchecked,
-#plate-2:hover ~ .text__unchecked,
-#plate-3:hover ~ .text__unchecked,
-#plate-4:hover ~ .text__unchecked,
-#plate-5:hover ~ .text__unchecked,
-#plate-6:hover ~ .text__unchecked,
-#plate-7:hover ~ .text__unchecked,
-#plate-8:hover ~ .text__unchecked,
-#plate-9:hover ~ .text__unchecked,
-#plate-10:hover ~ .text__unchecked {
+  .plate:hover ~ .text__unchecked {
     display: none;
   }
 }
@@ -349,12 +313,12 @@ body a {
   cursor: pointer;
 }
 
-.lds-hourglass {
+.loader {
   display: inline-block;
   animation: 0ms ease 2000ms 1 normal both running -load;
 }
 
-.lds-hourglass::after {
+.loader::after {
   content: " ";
   display: block;
   border-radius: 50%;
@@ -362,22 +326,22 @@ body a {
   height: 0;
   margin: 8px;
   box-sizing: border-box;
-  border: 32px solid black;
+  border: 22px solid black;
   border-color: #9356DC transparent #FF79DA transparent;
-  animation: lds-hourglass 1.2s infinite;
+  animation: loader 1.2s infinite;
 }
 
-@keyframes lds-hourglass {
+@keyframes loader {
   0% {
-    transform: rotate(0);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transform: rotate(0) scale(1);
+    animation-timing-function: ease-in;
   }
   50% {
-    transform: rotate(900deg);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: rotate(900deg) scale(2);
+    animation-timing-function: ease-out;
   }
   100% {
-    transform: rotate(1800deg);
+    transform: rotate(1800deg) scale(1);
   }
 }
 .loaded {
@@ -646,7 +610,7 @@ footer {
   text-shadow: 1px 1px 2px white;
 }
 .footer__links__a {
-  margin: 10px 0 5px 25px;
+  margin: 15px 0 5px 25px;
 }
 
 .gototop {

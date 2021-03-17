@@ -3,11 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>OhMyfood! - La note enchantée</title>
+    <meta name="description"
+        content="Ohmyfood! est un service de réservation de table de restaurant associée à un service de commande des plats en avance." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Ohmyfood! est un service de réservation de table de restaurant associée à un service de commande des plats en avance." />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://use.fontawesome.com">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
@@ -30,13 +33,12 @@
     <meta property="fb:admins" content="Facebook numeric ID" />
 
     <!--fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 
 
     <!--favicon-->
@@ -45,7 +47,6 @@
     <!--styles-->
     <link rel="stylesheet" href="../Styles/css/reset.css">
     <link rel="stylesheet" href="../Styles/css/style.css">
-    <title>OhMyfood! - La note enchantée</title>
 
 
 
@@ -80,7 +81,7 @@
                 <div class="menu__border"></div>
                 <div class="menu__cards">
                     <div class="checkbox-menu menu__plates plate-1">
-                        <input id="plate-1" type="checkbox">
+                        <input id="plate-1" class="plate" type="checkbox" name="plate-1" value="true">
                         <label for="plate-1" class="plate_label"></label>
                         <div class="menu__plates__text text__unchecked">
                             <h3>Ravioles de foie gras </h3>
@@ -101,7 +102,7 @@
                     </div>
 
                     <div class="checkbox-menu menu__plates plate-2">
-                        <input id="plate-2" type="checkbox">
+                        <input id="plate-2" class="plate" type="checkbox" name="plate-2" value="true">
                         <label for="plate-2" class="plate_label"></label>
                         <div class="menu__plates__text text__unchecked">
                             <h3>Caviar osciètre</h3>
@@ -122,7 +123,7 @@
                     </div>
 
                     <div class="checkbox-menu menu__plates plate-3">
-                        <input id="plate-3" type="checkbox">
+                        <input id="plate-3" class="plate" type="checkbox" name="plate-3" value="true">
                         <label for="plate-3" class="plate_label"></label>
                         <div class=" menu__plates__text text__unchecked ">
                             <h3>Homard et espuma de potiron</h3>
@@ -141,7 +142,7 @@
                         </div>
                     </div>
                     <div class="checkbox-menu menu__plates plate-4">
-                        <input id="plate-4" type="checkbox">
+                        <input id="plate-4" class="plate" type="checkbox" name="plate-4" value="true">
                         <label for="plate-4" class="plate_label"></label>
                         <div class=" menu__plates__text text__unchecked ">
                             <h3>Foie gras de canard cuit entier</h3>
@@ -165,7 +166,7 @@
                 <div class="menu__border"></div>
                 <div class="menu__cards">
                     <div class="checkbox-menu menu__plates plate-5">
-                        <input id="plate-5" type="checkbox">
+                        <input id="plate-5" class="plate" type="checkbox" name="plate-5" value="true">
                         <label for="plate-5" class="plate_label"></label>
                         <div class=" menu__plates__text text__unchecked ">
                             <h3>Noix de coquilles Saint-Jacques</h3>
@@ -184,7 +185,7 @@
                         </div>
                     </div>
                     <div class="checkbox-menu menu__plates plate-6">
-                        <input id="plate-6" type="checkbox">
+                        <input id="plate-6" class="plate" type="checkbox" name="plate-6" value="true">
                         <label for="plate-6" class="plate_label"></label>
                         <div class=" menu__plates__text text__unchecked ">
                             <h3>Langoustine poêlée</h3>
@@ -204,7 +205,7 @@
                         </div>
                     </div>
                     <div class="checkbox-menu menu__plates plate-7">
-                        <input id="plate-7" type="checkbox">
+                        <input id="plate-7" class="plate" type="checkbox" name="plate-7" value="true">
                         <label for="plate-7" class="plate_label"></label>
                         <div class=" menu__plates__text text__unchecked ">
                             <h3>Mijoté de queue de boeuf</h3>
@@ -229,7 +230,7 @@
                 <div class="menu__border"></div>
                 <div class="menu__cards">
                     <div class="checkbox-menu menu__plates plate-8">
-                        <input id="plate-8" type="checkbox">
+                        <input id="plate-8" class="plate" type="checkbox" name="plate-8" value="true">
                         <label for="plate-8" class="plate_label"></label>
                         <div class=" menu__plates__text text__unchecked ">
                             <h3>Macaron noisette et chocolat</h3>
@@ -250,7 +251,7 @@
                         </div>
                     </div>
                     <div class="checkbox-menu menu__plates plate-9">
-                        <input id="plate-9" type="checkbox">
+                        <input id="plate-9" class="plate" type="checkbox" name="plate-9" value="true">
                         <label for="plate-9" class="plate_label"></label>
                         <div class=" menu__plates__text text__unchecked ">
                             <h3>Baba au rhum revisité</h3>
@@ -270,7 +271,7 @@
                         </div>
                     </div>
                     <div class="checkbox-menu menu__plates plate-10">
-                        <input id="plate-10" type="checkbox">
+                        <input id="plate-10" class="plate" type="checkbox" name="plate-10" value="true">
                         <label for="plate-10" class="plate_label"></label>
                         <div class=" menu__plates__text text__unchecked ">
                             <h3>Tarte au citron meringuée</h3>

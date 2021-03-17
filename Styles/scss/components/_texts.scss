@@ -16,16 +16,7 @@
 
 }
 
-#plate-1,
-#plate-2,
-#plate-3,
-#plate-4,
-#plate-5,
-#plate-6,
-#plate-7,
-#plate-8,
-#plate-9,
-#plate-10 {
+.plate {
   &:checked~.text__checked {
     display: flex;
     flex-direction: column;
@@ -53,16 +44,7 @@
   }
 }
 
-#plate-1,
-#plate-2,
-#plate-3,
-#plate-4,
-#plate-5,
-#plate-6,
-#plate-7,
-#plate-8,
-#plate-9,
-#plate-10 {
+.plate {
   &:checked~.text__unchecked {
     display: none;
   }
