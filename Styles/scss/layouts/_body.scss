@@ -17,24 +17,36 @@ body {
         background-image: url(../../images/restaurants/palette_du_gout.jpg);
         background-size: cover;
         background-position: center;
+        @media screen and (min-width: 768px) {
+            background-image: url(../../images/restaurants/palette_du_gout_desktop.jpg);
+        }
     }
 
     &--note {
         background-image: url(../../images/restaurants/note_enchantée.jpg);
         background-size: cover;
         background-position: center;
+        @media screen and (min-width: 768px) {
+            background-image: url(../../images/restaurants/note_enchantée_desktop.jpg);
+        }
     }
 
     &--french {
         background-image: url(../../images/restaurants/a_la_francaise.jpg);
         background-size: cover;
         background-position: center;
+        @media screen and (min-width: 768px) {
+            background-image: url(../../images/restaurants/a_la_francaise_desktop.jpg);
+        }
     }
 
     &--sense {
         background-image: url(../../images/restaurants/delice_des_sens.jpg);
         background-size: cover;
         background-position: center;
+        @media screen and (min-width: 768px) {
+            background-image: url(../../images/restaurants/delice_des_sens_desktop.jpg);
+        }
     }
 }
 

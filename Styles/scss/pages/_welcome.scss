@@ -59,6 +59,7 @@
         align-items: center;
         margin: 11px 0;
         width: 335px;
+        cursor: pointer;
 
         &:hover {
             i {
@@ -100,14 +101,17 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 20px;
-            height: 20px;
+            width: 24px;
+            height: 24px;
             font-size: 80%;
             background-color: $color-primary;
             z-index: 2;
             margin-right: -11px;
             color: white;
             border-radius: 5ex;
+            position: absolute;
+            top: 28px;
+            left: -7px;
         }
 
     }
